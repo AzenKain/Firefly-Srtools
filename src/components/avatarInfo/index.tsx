@@ -205,6 +205,7 @@ export default function AvatarInfo() {
                                                         type="checkbox"
                                                         checked={avatars[avatarSelected?.id || ""]?.techniques.length > 0}
                                                         onChange={(e) => {
+                                                            if (!Technique[avatarSelected?.id || ""] || Technique[avatarSelected?.id || ""]?.maze_buff.length === 0) return
                                                             const techniques = e.target.checked ? Technique[avatarSelected?.id || ""]?.maze_buff : [];
                                                             const newAvatar = { ...avatars[avatarSelected?.id || ""], techniques };
                                                             setAvatar(newAvatar);
