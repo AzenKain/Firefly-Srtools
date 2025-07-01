@@ -22,8 +22,8 @@ export default function CharacterCard({ data }: CharacterCardProps) {
     >
       <div
         className={`w-full rounded-md bg-gradient-to-br ${data.rank === "CombatPowerAvatarRarityType5"
-          ? "from-yellow-100 via-yellow-300 to-yellow-500"
-          : "from-purple-100 via-purple-300 to-purple-500"
+          ? "from-yellow-300 via-yellow-400 to-yellow-500"
+          : "from-purple-100 via-purple-400 to-purple-500"
           }`}
       >
 

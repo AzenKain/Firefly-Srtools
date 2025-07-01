@@ -19905,7 +19905,7 @@
   },
   "21061": {
     "Name": "Holiday Thermae Escapade",
-    "Desc": "<i>\"Cinny, let's go try out that new special bath that recently opened.\"</i>\\n\\nAfter finishing her medical duties in Okhema, the girl followed the curious child into the eclectic set of pools.\\n\\n<i>\"How about a Tomato Juice Massage?\"</i>\\nStaring at the attendant’s crimson-stained hands, she hugged the eager Little Ica and retreated—\\n<i>\"I prefer something... drinkable....\"</i>\\n\\n<i>\"Dromas back massage, limited-time discount!\"</i>\\nA curious dromas lowered its head, its hot breath tousling her hair.\\n<i>\"N-next time, maybe!\"</i>\\n\\n<i>\"Herbal Bath—strengthens body and soul! How many in your party?\"</i>\\nLured by the fragrant herbs, she tentatively dipped a foot into the pool.\\n<i>\"This... seems healthy...\"</i>\\n\\n<i>\"Doot, doot-doot!\"</i>\\nLittle Ica floated blissfully on its back.\\n<i>\"Guess even you needed a break from all we've been doing recently...\"</i>\\n\\nOn this rare day off, sipping grape juice, the girl chatted with the red-haired child about everything from sleep tips to pastry recipes.\\n\\n<i>\"Oh no—Little Ica!\"</i>\\nThe child's shriek shattered the bathhouse's calm.\\n\\n<i>\"Doot...\"\\n\"Hold on, Little Ica!\"</i>",
+    "Desc": "<i>\"Cinny, let's go try out that new special bath that recently opened.\"</i>\\n\\nAfter finishing her medical duties in Okhema, the girl followed the curious child into the eclectic set of pools.\\n\\n<i>\"How about a Tomato Juice Massage?\"</i>\\nStaring at the attendant’s crimson-stained hands, she hugged the eager Little Ica and retreated—\\n<i>\"I prefer something... drinkable....\"</i>\\n\\n<i>\"Dromas back massage, limited-time discount!\"</i>\\nA curious dromas lowered its head, its hot breath tousling her hair.\\n<i>\"N—Next time, maybe!\"</i>\\n\\n<i>\"Herbal Bath — strengthens body and soul! How many in your party?\"</i>\\nLured by the fragrant herbs, she tentatively dipped a foot into the pool.\\n<i>\"This... seems healthy...\"</i>\\n\\n<i>\"Doot, doot-doot!\"</i>\\nLittle Ica floated blissfully on its back.\\n<i>\"Guess even you needed a break from all we've been doing recently...\"</i>\\n\\nOn this rare day off, sipping grape juice, the girl chatted with the red-haired child about everything from sleep tips to pastry recipes.\\n\\n<i>\"Oh no—Little Ica!\"</i>\\nThe child's shriek shattered the bathhouse's calm.\\n\\n<i>\"Doot...\"\\n\"Hold on, Little Ica!\"</i>",
     "Rarity": "CombatPowerLightconeRarity4",
     "BaseType": "Warlock",
     "Refinements": {
@@ -21609,6 +21609,253 @@
       },
       {
         "EquipmentID": 22004,
+        "Promotion": 6,
+        "PromotionCostList": [],
+        "WorldLevelRequire": 5,
+        "MaxLevel": 80,
+        "BaseHP": 440.64000000059605,
+        "BaseHPAdd": 6.480000000447035,
+        "BaseAttack": 220.32000000029802,
+        "BaseAttackAdd": 3.2400000002235174,
+        "BaseDefence": 153,
+        "BaseDefenceAdd": 2.2500000002328306
+      }
+    ]
+  },
+  "22005": {
+    "Name": "Maze Restaurant Forever",
+    "Desc": "*BOOM*—\\nOutside the Maze, a storm rages endlessly.\\n*gurgle*—\\nThe fairies' magical cauldron burns with an eternal flame.\\n\\n<i>\"Sprinkle in the special spices...\"</i>\\n<i>\"Add some fresh vegetables!\"</i>\\n<i>\"This time, we'll succeed for sure!\"</i>\\n\\nThe huge cauldron bubbled up again as the fairies watched eagerly.\\n<i>\"Here it comes, here it comes!\"</i>\\nA brilliant light burst forth from the bottom of the pot—\\n\\nLook, everyone's gathering around!\\n\\n...\\n\\nAt the fragrant feast, guests raised their glasses to toast to these wonderful times—\\n\\nMay this dreamy paradise stay warm and joyful forever!",
+    "Rarity": "CombatPowerLightconeRarity4",
+    "BaseType": "Shaman",
+    "Refinements": {
+      "Name": "So good!",
+      "Desc": "Increases the wearer's ATK by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. After using their Skill, the wearer's ATK increases by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>, stacking up to <unbreak>#3[i]</unbreak> times.",
+      "Level": {
+        "1": {
+          "ParamList": [
+            0.1600000001490116,
+            0.0800000000745058,
+            3
+          ]
+        },
+        "2": {
+          "ParamList": [
+            0.20000000018626451,
+            0.10000000009313226,
+            3
+          ]
+        },
+        "3": {
+          "ParamList": [
+            0.24000000022351742,
+            0.12000000011175871,
+            3
+          ]
+        },
+        "4": {
+          "ParamList": [
+            0.2800000002607703,
+            0.14000000013038516,
+            3
+          ]
+        },
+        "5": {
+          "ParamList": [
+            0.3200000002980232,
+            0.1600000001490116,
+            3
+          ]
+        }
+      }
+    },
+    "Stats": [
+      {
+        "EquipmentID": 22005,
+        "PromotionCostList": [
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 2,
+            "ItemNum": 4000,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 115001,
+            "ItemNum": 5,
+            "Rarity": "NotNormal"
+          }
+        ],
+        "PlayerLevelRequire": 15,
+        "MaxLevel": 20,
+        "BaseHP": 43.200000000186265,
+        "BaseHPAdd": 6.480000000447035,
+        "BaseAttack": 21.600000000558794,
+        "BaseAttackAdd": 3.2400000002235174,
+        "BaseDefence": 15,
+        "BaseDefenceAdd": 2.2500000002328306
+      },
+      {
+        "EquipmentID": 22005,
+        "Promotion": 1,
+        "PromotionCostList": [
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 2,
+            "ItemNum": 8000,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 110231,
+            "ItemNum": 3,
+            "Rarity": "NotNormal"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 115001,
+            "ItemNum": 10,
+            "Rarity": "NotNormal"
+          }
+        ],
+        "WorldLevelRequire": 1,
+        "MaxLevel": 30,
+        "BaseHP": 95.04000000003725,
+        "BaseHPAdd": 6.480000000447035,
+        "BaseAttack": 47.52000000048429,
+        "BaseAttackAdd": 3.2400000002235174,
+        "BaseDefence": 33,
+        "BaseDefenceAdd": 2.2500000002328306
+      },
+      {
+        "EquipmentID": 22005,
+        "Promotion": 2,
+        "PromotionCostList": [
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 2,
+            "ItemNum": 16000,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 110232,
+            "ItemNum": 3,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 115002,
+            "ItemNum": 6,
+            "Rarity": "Rare"
+          }
+        ],
+        "WorldLevelRequire": 2,
+        "MaxLevel": 40,
+        "BaseHP": 164.160000000149,
+        "BaseHPAdd": 6.480000000447035,
+        "BaseAttack": 82.0800000000745,
+        "BaseAttackAdd": 3.2400000002235174,
+        "BaseDefence": 57,
+        "BaseDefenceAdd": 2.2500000002328306
+      },
+      {
+        "EquipmentID": 22005,
+        "Promotion": 3,
+        "PromotionCostList": [
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 2,
+            "ItemNum": 40000,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 110232,
+            "ItemNum": 6,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 115002,
+            "ItemNum": 9,
+            "Rarity": "Rare"
+          }
+        ],
+        "WorldLevelRequire": 3,
+        "MaxLevel": 50,
+        "BaseHP": 233.28000000026077,
+        "BaseHPAdd": 6.480000000447035,
+        "BaseAttack": 116.64000000059605,
+        "BaseAttackAdd": 3.2400000002235174,
+        "BaseDefence": 81,
+        "BaseDefenceAdd": 2.2500000002328306
+      },
+      {
+        "EquipmentID": 22005,
+        "Promotion": 4,
+        "PromotionCostList": [
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 2,
+            "ItemNum": 80000,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 110233,
+            "ItemNum": 4,
+            "Rarity": "VeryRare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 115003,
+            "ItemNum": 5,
+            "Rarity": "VeryRare"
+          }
+        ],
+        "WorldLevelRequire": 4,
+        "MaxLevel": 60,
+        "BaseHP": 302.40000000037253,
+        "BaseHPAdd": 6.480000000447035,
+        "BaseAttack": 151.20000000018626,
+        "BaseAttackAdd": 3.2400000002235174,
+        "BaseDefence": 105,
+        "BaseDefenceAdd": 2.2500000002328306
+      },
+      {
+        "EquipmentID": 22005,
+        "Promotion": 5,
+        "PromotionCostList": [
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 2,
+            "ItemNum": 160000,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 110233,
+            "ItemNum": 8,
+            "Rarity": "VeryRare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 115003,
+            "ItemNum": 7,
+            "Rarity": "VeryRare"
+          }
+        ],
+        "WorldLevelRequire": 5,
+        "MaxLevel": 70,
+        "BaseHP": 371.5200000004843,
+        "BaseHPAdd": 6.480000000447035,
+        "BaseAttack": 185.7600000007078,
+        "BaseAttackAdd": 3.2400000002235174,
+        "BaseDefence": 129,
+        "BaseDefenceAdd": 2.2500000002328306
+      },
+      {
+        "EquipmentID": 22005,
         "Promotion": 6,
         "PromotionCostList": [],
         "WorldLevelRequire": 5,
@@ -32288,12 +32535,12 @@
   },
   "23042": {
     "Name": "Long May Rainbows Adorn the Sky",
-    "Desc": "<i>\"Emotions are like clouds, and we are the sky that carries them. If the sky is overcast, then our emotions will fluctuate all over.\"</i>\\nThe physician listens with care to the visitor's sorrows, offering words of gentle solace.\\n<i>\"Please close your eyes and breathe slowly... Imagine yourself in a warm and soft place...\"</i>\\n\\nAs if infused with magic, a seven-colored rainbow radiance spills from beneath the wings of the winged beast.\\n<i>\"A breeze would drift across the plains, carrying the fragrance of wildflowers. Moist clouds would pass by, laden with sunlight...\"</i>\\nThe visitor gradually sinks into a peaceful dream, responding only with the quiet rhythm of steady breaths.\\n\\nAfter seeing the last patient, the physician gently closes the door of the ward.\\n\\nIn the distance, the boundless evernight still surges, with many ruins standing like the scars of the earth.\\n\\n<i>\"In the next life, may dawn shine upon all...\"</i>\\nBefore departing, she makes a wish to the sky —\\n<i>\"May the rainbow-colored light remains in the sky forever.\"</i>",
+    "Desc": "<i>\"Emotions are like clouds, and we are the sky that carries them. If the sky is overcast, then our emotions will fluctuate all over.\"</i>\\nThe physician listens with care to the visitor's sorrows, offering words of gentle solace.\\n<i>\"Please close your eyes and breathe slowly... Imagine yourself in a warm and soft place...\"</i>\\n\\nAs if infused with magic, a seven-colored rainbow radiance spills from beneath the wings of the winged beast.\\n<i>\"A breeze would drift across the plains, carrying the fragrance of wildflowers. Moist clouds would pass by, laden with sunlight...\"</i>\\nThe visitor gradually sinks into a peaceful dream, responding only with the quiet rhythm of steady breaths.\\n\\nAfter seeing the last patient, the physician gently closes the door of the ward.\\n\\nIn the distance, the boundless evernight still surges, with many ruins standing like the scars of the earth.\\n\\n<i>\"In the next life, may dawn shine upon all...\"</i>\\nBefore departing, she makes a wish to the sky —\\n<i>\"May the sky forever hold that rainbow radiance.\"</i>",
     "Rarity": "CombatPowerLightconeRarity5",
     "BaseType": "Memory",
     "Refinements": {
       "Name": "Tolerant",
-      "Desc": "Increases the wearer's SPD by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. When the wearer uses Basic ATK, Skill, or Ultimate, consumes all allies' HP equal to <color=#f29e38ff><unbreak>#2[f1]%</unbreak></color> of their current HP and additionally deals 1 instance of Additional DMG of the wearer's memosprite Type equal to <color=#f29e38ff><unbreak>#6[f1]%</unbreak></color> of the total consumed HP to the attacked target after the next attack launched by the wearer's memosprite. The total HP consumed is then reset. When the wearer's memosprite uses Memosprite Skill, increases the DMG taken by all enemies by <color=#f29e38ff><unbreak>#4[f1]%</unbreak></color> for <unbreak>#5[i]</unbreak> turn(s). The same types of effects cannot stack.",
+      "Desc": "Increases the wearer's SPD by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. When the wearer uses Basic ATK, Skill, or Ultimate, consumes all allies' HP equal to <color=#f29e38ff><unbreak>#2[f1]%</unbreak></color> of their current HP, and after the next attack of the wearer's memosprite, enables it to additionally deal 1 instance of Additional DMG equal to <color=#f29e38ff><unbreak>#6[f1]%</unbreak></color> of the total consumed HP to the attacked target, with the damage type based on the memosprite's type. Then, the total consumed HP is reset. When the wearer's memosprite uses Memosprite Skill, increases the DMG taken by all enemies by <color=#f29e38ff><unbreak>#4[f1]%</unbreak></color>, lasting for <unbreak>#5[i]</unbreak> turn(s). Effects of the same type cannot stack.",
       "Level": {
         "1": {
           "ParamList": [
@@ -32550,12 +32797,12 @@
   },
   "23043": {
     "Name": "Lies Dance on the Breeze",
-    "Desc": "The cat-eared girl stretches her limbs atop the rooftop, slinking into the night.\\nIn the treasure vault that had slumbered for a thousand years, she glides effortlessly, gathering precious treasures into her embrace before vanishing without a sound.\\n<i>\"Foolish fate could never catch me!\"</i>\\n\\nThe wind through the ruins carries the scent of the wild, rustling her hood.\\nResting her head against the cold stone, she swallows a bite of rough, dry rations, idly tossing a gold coin between her fingers.\\n\\nA faint sound from afar reaches her ears. In that holy city bathed in dawn's light, the bustling crowds still revel in warmth and celebration.\\n<i>\"How much longer... a year, or ten thousand?\"</i>\\n\\nShe stretches with a lazy yawn, casting her restless thoughts aside.\\n<i>\"Hah, Cifera always has the last laugh!\"</i>\\n\\nA golden streak of lightning cuts across the sky, and her proclamation lingers in the wind—\\nJust as it had a thousand years ago.",
+    "Desc": "The cat-eared girl stretches her limbs on the rooftop, slinking into the night.\\nIn the treasure vault that had slumbered for a thousand years, she glides effortlessly, gathering precious treasures into her embrace before vanishing without a sound.\\n<i>\"Foolish fate could never catch me!\"</i>\\n\\nThe wind through the ruins carries the scent of the wild, rustling her hood.\\nResting her head against the cold stone, she swallows a bite of rough, dry rations, idly tossing a gold coin between her fingers.\\n\\nA faint sound from afar reaches her ears. In that holy city bathed in dawn's light, the bustling crowds still revel in warmth and celebration.\\n<i>\"How much longer... a year, or ten thousand?\"</i>\\n\\nShe stretches with a lazy yawn, casting her restless thoughts aside.\\n<i>\"Hah, Cifera always has the last laugh!\"</i>\\n\\nA golden streak of lightning cuts across the sky, and her proclamation lingers in the wind—\\nJust as it had a thousand years ago.",
     "Rarity": "CombatPowerLightconeRarity5",
     "BaseType": "Warlock",
     "Refinements": {
       "Name": "Deceit",
-      "Desc": "Increases the wearer's SPD by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. After the wearer uses an attack, there is a <unbreak>#2[i]%</unbreak> base chance to inflict the \"Bamboozle\" state on every enemy target. While under the \"Bamboozle\" state, enemy target's DEF decreases by <color=#f29e38ff><unbreak>#3[i]%</unbreak></color> for <unbreak>#4[i]</unbreak> turn(s). If the wearer's SPD is higher than or equal to <unbreak>#7[i]</unbreak>, there is a <unbreak>#5[i]%</unbreak> base chance to inflict the \"Theft\" state on every enemy target. While under the \"Theft\" state, enemy target's DEF decreases by <color=#f29e38ff><unbreak>#6[i]%</unbreak></color> for <unbreak>#4[i]</unbreak> turn(s). When \"Bamboozle\" or \"Theft\" is inflicted repeatedly, only the latest effect inflicted can be active.",
+      "Desc": "Increases the wearer's SPD by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. After the wearer uses an attack, there is a <unbreak>#2[i]%</unbreak> base chance to inflict the \"Bamboozle\" state on every enemy target. While under the \"Bamboozle\" state, enemy targets have their DEF decreased by <color=#f29e38ff><unbreak>#3[i]%</unbreak></color> for <unbreak>#4[i]</unbreak> turn(s). If the wearer's SPD is higher than or equal to <unbreak>#7[i]</unbreak>, there is a <unbreak>#5[i]%</unbreak> base chance to inflict the \"Theft\" state on every enemy target. While under the \"Theft\" state, enemy targets have their DEF decreased by <color=#f29e38ff><unbreak>#6[i]%</unbreak></color> for <unbreak>#4[i]</unbreak> turn(s). When \"Bamboozle\" or \"Theft\" is repeatedly inflicted, only the most recently inflicted instance takes effect.",
       "Level": {
         "1": {
           "ParamList": [
@@ -33069,7 +33316,7 @@
     "BaseType": "Warrior",
     "Refinements": {
       "Name": "King of Knights",
-      "Desc": "Increases the wearer's CRIT DMG by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. When using their Ultimate, increases the wearer's ATK by <color=#f29e38ff><unbreak>#6[i]%</unbreak></color>, and if the wearer's Max Energy is greater than or equal to <unbreak>#3[i]</unbreak>, regenerates a fixed amount of Energy equal to <unbreak>#5[i]%</unbreak> of the wearer's Max Energy and increases their ATK by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> for <unbreak>#4[i]</unbreak> turns.",
+      "Desc": "Increases the wearer's CRIT DMG by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. When using Ultimate, increases the wearer's ATK by <color=#f29e38ff><unbreak>#6[i]%</unbreak></color>, and if the wearer's Max Energy is greater than or equal to <unbreak>#3[i]</unbreak>, regenerates a fixed amount of Energy equal to <unbreak>#5[i]%</unbreak> of the wearer's Max Energy and once again increases the wearer's ATK by <color=#f29e38ff><unbreak>#2[i]%</unbreak></color>, lasting for <unbreak>#4[i]</unbreak> turns.",
       "Level": {
         "1": {
           "ParamList": [
@@ -33578,6 +33825,530 @@
         "BaseAttackAdd": 3.9600000008940697,
         "BaseDefence": 244.80000000074506,
         "BaseDefenceAdd": 3.6000000005587935
+      }
+    ]
+  },
+  "23047": {
+    "Name": "Why Does the Ocean Sing",
+    "Desc": "Waves surge forth, their roar echoing across the heavens.\\nFish swim through the empty seas, where ancient foam churns and that melody seems to still linger.\\n\\n<i>\"Noble Princess, feast with us!\"</i>\\nAnswering the deep sea's call, she danced with the black tide until she alone remained on that grand stage.\\n<i>\"Swordmaster of the seas, why do you stay silent, what makes you sing?\"</i>\\nWith every step upon the Earth, she endured the pain, rarely singing, only her crimson blade sang the lament of life.\\n\\n<i>\"Dux Gladiorum, come with me to conquer the starry seas!\"</i>\\nWhen she found this blazing light, she finally took up her bow, believing it to be the start of the celebration.\\n\\n...\\n\\n<i>\"Helektra... Helektra... when your song ends, where will you swim to next?\"</i>\\n\\nWhen futile hopes shatter, she always answers their questions with a solitary melody, yet it enchants all who hear it—\\n\\nOr perhaps... whether in the mortal realm or the deep sea, the only true listener is the performer herself.",
+    "Rarity": "CombatPowerLightconeRarity5",
+    "BaseType": "Warlock",
+    "Refinements": {
+      "Name": "Solo",
+      "Desc": "Increases the wearer's Effect Hit Rate by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. When the wearer hits an enemy target with Basic ATK, Skill, or Ultimate, has a <unbreak>#2[i]%</unbreak> base chance to inflict \"Enthrallment\" state for <unbreak>#3[i]</unbreak> turn(s). Effects of the same type cannot stack. While in \"Enthrallment\" state, each debuff applied by the wearer increases DoT taken by <color=#f29e38ff><unbreak>#4[f1]%</unbreak></color>, stacking up to <unbreak>#5[i]</unbreak> time(s). When attacked by an ally target, increases the attacker's SPD by <color=#f29e38ff><unbreak>#6[f1]%</unbreak></color> for <unbreak>#7[i]</unbreak> turn(s).",
+      "Level": {
+        "1": {
+          "ParamList": [
+            0.40000000037252903,
+            0.8000000007450581,
+            3,
+            0.05000000004656613,
+            6,
+            0.10000000009313226,
+            3
+          ]
+        },
+        "2": {
+          "ParamList": [
+            0.45000000041909516,
+            0.8000000007450581,
+            3,
+            0.06250000023283064,
+            6,
+            0.12499999976716936,
+            3
+          ]
+        },
+        "3": {
+          "ParamList": [
+            0.5000000004656613,
+            0.8000000007450581,
+            3,
+            0.07499999972060323,
+            6,
+            0.1500000001396984,
+            3
+          ]
+        },
+        "4": {
+          "ParamList": [
+            0.5500000005122274,
+            0.8000000007450581,
+            3,
+            0.08749999990686774,
+            6,
+            0.17499999981373549,
+            3
+          ]
+        },
+        "5": {
+          "ParamList": [
+            0.6000000005587935,
+            0.8000000007450581,
+            3,
+            0.10000000009313226,
+            6,
+            0.20000000018626451,
+            3
+          ]
+        }
+      }
+    },
+    "Stats": [
+      {
+        "EquipmentID": 23047,
+        "PromotionCostList": [
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 2,
+            "ItemNum": 5000,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 115001,
+            "ItemNum": 8,
+            "Rarity": "NotNormal"
+          }
+        ],
+        "PlayerLevelRequire": 15,
+        "MaxLevel": 20,
+        "BaseHP": 43.200000000186265,
+        "BaseHPAdd": 6.480000000447035,
+        "BaseAttack": 28.800000000745058,
+        "BaseAttackAdd": 4.320000000298023,
+        "BaseDefence": 21,
+        "BaseDefenceAdd": 3.1500000001396984
+      },
+      {
+        "EquipmentID": 23047,
+        "Promotion": 1,
+        "PromotionCostList": [
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 2,
+            "ItemNum": 10000,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 110221,
+            "ItemNum": 4,
+            "Rarity": "NotNormal"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 115001,
+            "ItemNum": 12,
+            "Rarity": "NotNormal"
+          }
+        ],
+        "WorldLevelRequire": 1,
+        "MaxLevel": 30,
+        "BaseHP": 95.04000000003725,
+        "BaseHPAdd": 6.480000000447035,
+        "BaseAttack": 63.360000000335276,
+        "BaseAttackAdd": 4.320000000298023,
+        "BaseDefence": 46.200000000186265,
+        "BaseDefenceAdd": 3.1500000001396984
+      },
+      {
+        "EquipmentID": 23047,
+        "Promotion": 2,
+        "PromotionCostList": [
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 2,
+            "ItemNum": 20000,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 110222,
+            "ItemNum": 4,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 115002,
+            "ItemNum": 8,
+            "Rarity": "Rare"
+          }
+        ],
+        "WorldLevelRequire": 2,
+        "MaxLevel": 40,
+        "BaseHP": 164.160000000149,
+        "BaseHPAdd": 6.480000000447035,
+        "BaseAttack": 109.44000000040978,
+        "BaseAttackAdd": 4.320000000298023,
+        "BaseDefence": 79.80000000074506,
+        "BaseDefenceAdd": 3.1500000001396984
+      },
+      {
+        "EquipmentID": 23047,
+        "Promotion": 3,
+        "PromotionCostList": [
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 2,
+            "ItemNum": 50000,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 110222,
+            "ItemNum": 8,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 115002,
+            "ItemNum": 12,
+            "Rarity": "Rare"
+          }
+        ],
+        "WorldLevelRequire": 3,
+        "MaxLevel": 50,
+        "BaseHP": 233.28000000026077,
+        "BaseHPAdd": 6.480000000447035,
+        "BaseAttack": 155.5200000004843,
+        "BaseAttackAdd": 4.320000000298023,
+        "BaseDefence": 113.40000000037253,
+        "BaseDefenceAdd": 3.1500000001396984
+      },
+      {
+        "EquipmentID": 23047,
+        "Promotion": 4,
+        "PromotionCostList": [
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 2,
+            "ItemNum": 100000,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 110223,
+            "ItemNum": 5,
+            "Rarity": "VeryRare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 115003,
+            "ItemNum": 6,
+            "Rarity": "VeryRare"
+          }
+        ],
+        "WorldLevelRequire": 4,
+        "MaxLevel": 60,
+        "BaseHP": 302.40000000037253,
+        "BaseHPAdd": 6.480000000447035,
+        "BaseAttack": 201.6000000005588,
+        "BaseAttackAdd": 4.320000000298023,
+        "BaseDefence": 147,
+        "BaseDefenceAdd": 3.1500000001396984
+      },
+      {
+        "EquipmentID": 23047,
+        "Promotion": 5,
+        "PromotionCostList": [
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 2,
+            "ItemNum": 200000,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 110223,
+            "ItemNum": 10,
+            "Rarity": "VeryRare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 115003,
+            "ItemNum": 8,
+            "Rarity": "VeryRare"
+          }
+        ],
+        "WorldLevelRequire": 5,
+        "MaxLevel": 70,
+        "BaseHP": 371.5200000004843,
+        "BaseHPAdd": 6.480000000447035,
+        "BaseAttack": 247.6800000006333,
+        "BaseAttackAdd": 4.320000000298023,
+        "BaseDefence": 180.6000000005588,
+        "BaseDefenceAdd": 3.1500000001396984
+      },
+      {
+        "EquipmentID": 23047,
+        "Promotion": 6,
+        "PromotionCostList": [],
+        "WorldLevelRequire": 5,
+        "MaxLevel": 80,
+        "BaseHP": 440.64000000059605,
+        "BaseHPAdd": 6.480000000447035,
+        "BaseAttack": 293.7600000007078,
+        "BaseAttackAdd": 4.320000000298023,
+        "BaseDefence": 214.20000000018626,
+        "BaseDefenceAdd": 3.1500000001396984
+      }
+    ]
+  },
+  "23048": {
+    "Name": "Era Engraved By Golden Blood",
+    "Desc": "<i>\"How will history remember Cerydra a thousand years from now?\"</i>\\nShe was once asked.\\n\\nTo some, she was the eminent \"Imperator.\"\\nThat cold and cruel tyrant, that ambitious \"Flamebearer,\" that empress who burned the Old Era with blood and fire...\\n\\nOthers argued she was merely a pitiful \"pawn.\"\\nThis forsaken ruler was but a prisoner of ambition, destined to lose everything in that game of chess against the gods.\\n\\nAnd some said that in the depths of her heart, darker than the ocean's abyss, she was just a mortal named \"Cerydra\"—\\nOne who mourned for fallen comrades, who hesitated and feared before her heavy fate, unable to move forward...\\n\\n<i>\"Heh, There is no need for history to remember me...\"</i>\\n\\nSwallowing the bitterness in her heart, she continued down that path of Flame-Chase paved with sacrifice—\\n\\n<i>\"It is our burning golden blood that shall engrave it!\"</i>",
+    "Rarity": "CombatPowerLightconeRarity5",
+    "BaseType": "Shaman",
+    "Refinements": {
+      "Name": "Conquer",
+      "Desc": "Increases the wearer's ATK by <color=#f29e38ff><unbreak>#1[i]%</unbreak></color>. After using Ultimate, recovers <unbreak>#3[i]</unbreak> Skill Point(s). When the wearer uses their Skill on an ally character, increases DMG dealt by target's Skill by <color=#f29e38ff><unbreak>#4[f1]%</unbreak></color> for <unbreak>#5[i]</unbreak> turn(s).",
+      "Level": {
+        "1": {
+          "ParamList": [
+            0.6400000005960464,
+            1,
+            1,
+            0.5400000005029142,
+            3
+          ]
+        },
+        "2": {
+          "ParamList": [
+            0.8000000007450581,
+            1,
+            1,
+            0.6750000002793968,
+            3
+          ]
+        },
+        "3": {
+          "ParamList": [
+            0.9600000008940697,
+            1,
+            1,
+            0.8100000007543713,
+            3
+          ]
+        },
+        "4": {
+          "ParamList": [
+            1.1200000001117587,
+            1,
+            1,
+            0.9450000005308539,
+            3
+          ]
+        },
+        "5": {
+          "ParamList": [
+            1.2800000002607703,
+            1,
+            1,
+            1.0800000000745058,
+            3
+          ]
+        }
+      }
+    },
+    "Stats": [
+      {
+        "EquipmentID": 23048,
+        "PromotionCostList": [
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 2,
+            "ItemNum": 5000,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 115011,
+            "ItemNum": 8,
+            "Rarity": "NotNormal"
+          }
+        ],
+        "PlayerLevelRequire": 15,
+        "MaxLevel": 20,
+        "BaseHP": 43.200000000186265,
+        "BaseHPAdd": 6.480000000447035,
+        "BaseAttack": 28.800000000745058,
+        "BaseAttackAdd": 4.320000000298023,
+        "BaseDefence": 21,
+        "BaseDefenceAdd": 3.1500000001396984
+      },
+      {
+        "EquipmentID": 23048,
+        "Promotion": 1,
+        "PromotionCostList": [
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 2,
+            "ItemNum": 10000,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 110231,
+            "ItemNum": 4,
+            "Rarity": "NotNormal"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 115011,
+            "ItemNum": 12,
+            "Rarity": "NotNormal"
+          }
+        ],
+        "WorldLevelRequire": 1,
+        "MaxLevel": 30,
+        "BaseHP": 95.04000000003725,
+        "BaseHPAdd": 6.480000000447035,
+        "BaseAttack": 63.360000000335276,
+        "BaseAttackAdd": 4.320000000298023,
+        "BaseDefence": 46.200000000186265,
+        "BaseDefenceAdd": 3.1500000001396984
+      },
+      {
+        "EquipmentID": 23048,
+        "Promotion": 2,
+        "PromotionCostList": [
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 2,
+            "ItemNum": 20000,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 110232,
+            "ItemNum": 4,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 115012,
+            "ItemNum": 8,
+            "Rarity": "Rare"
+          }
+        ],
+        "WorldLevelRequire": 2,
+        "MaxLevel": 40,
+        "BaseHP": 164.160000000149,
+        "BaseHPAdd": 6.480000000447035,
+        "BaseAttack": 109.44000000040978,
+        "BaseAttackAdd": 4.320000000298023,
+        "BaseDefence": 79.80000000074506,
+        "BaseDefenceAdd": 3.1500000001396984
+      },
+      {
+        "EquipmentID": 23048,
+        "Promotion": 3,
+        "PromotionCostList": [
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 2,
+            "ItemNum": 50000,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 110232,
+            "ItemNum": 8,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 115012,
+            "ItemNum": 12,
+            "Rarity": "Rare"
+          }
+        ],
+        "WorldLevelRequire": 3,
+        "MaxLevel": 50,
+        "BaseHP": 233.28000000026077,
+        "BaseHPAdd": 6.480000000447035,
+        "BaseAttack": 155.5200000004843,
+        "BaseAttackAdd": 4.320000000298023,
+        "BaseDefence": 113.40000000037253,
+        "BaseDefenceAdd": 3.1500000001396984
+      },
+      {
+        "EquipmentID": 23048,
+        "Promotion": 4,
+        "PromotionCostList": [
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 2,
+            "ItemNum": 100000,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 110233,
+            "ItemNum": 5,
+            "Rarity": "VeryRare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 115013,
+            "ItemNum": 6,
+            "Rarity": "VeryRare"
+          }
+        ],
+        "WorldLevelRequire": 4,
+        "MaxLevel": 60,
+        "BaseHP": 302.40000000037253,
+        "BaseHPAdd": 6.480000000447035,
+        "BaseAttack": 201.6000000005588,
+        "BaseAttackAdd": 4.320000000298023,
+        "BaseDefence": 147,
+        "BaseDefenceAdd": 3.1500000001396984
+      },
+      {
+        "EquipmentID": 23048,
+        "Promotion": 5,
+        "PromotionCostList": [
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 2,
+            "ItemNum": 200000,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 110233,
+            "ItemNum": 10,
+            "Rarity": "VeryRare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 115013,
+            "ItemNum": 8,
+            "Rarity": "VeryRare"
+          }
+        ],
+        "WorldLevelRequire": 5,
+        "MaxLevel": 70,
+        "BaseHP": 371.5200000004843,
+        "BaseHPAdd": 6.480000000447035,
+        "BaseAttack": 247.6800000006333,
+        "BaseAttackAdd": 4.320000000298023,
+        "BaseDefence": 180.6000000005588,
+        "BaseDefenceAdd": 3.1500000001396984
+      },
+      {
+        "EquipmentID": 23048,
+        "Promotion": 6,
+        "PromotionCostList": [],
+        "WorldLevelRequire": 5,
+        "MaxLevel": 80,
+        "BaseHP": 440.64000000059605,
+        "BaseHPAdd": 6.480000000447035,
+        "BaseAttack": 293.7600000007078,
+        "BaseAttackAdd": 4.320000000298023,
+        "BaseDefence": 214.20000000018626,
+        "BaseDefenceAdd": 3.1500000001396984
       }
     ]
   },
