@@ -20,9 +20,9 @@ export default function LightconeCard({ data }: LightconeCardProps) {
         >
             <div
                 className={`w-full rounded-md bg-gradient-to-br ${data.rank === "CombatPowerLightconeRarity5"
-                    ? "from-yellow-400 via-yellow-100 to-yellow-500"
-                    : data.rank === "CombatPowerLightconeRarity4" ? "from-purple-300 via-purple-100 to-purple-400" :
-                        "from-blue-300 via-blue-100 to-blue-400"
+                    ? "from-yellow-400 via-yellow-600/70 to-yellow-800/50"
+                    : data.rank === "CombatPowerLightconeRarity4" ? "from-purple-400 via-purple-600/70 to-purple-800/50" :
+                        "from-blue-400 via-blue-600/70 to-blue-800/50"
                     }`}
             >
 

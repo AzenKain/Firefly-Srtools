@@ -22,8 +22,8 @@ export default function CharacterCard({ data }: CharacterCardProps) {
     >
       <div
         className={`w-full rounded-md bg-gradient-to-br ${data.rank === "CombatPowerAvatarRarityType5"
-          ? "from-yellow-300 via-yellow-400 to-yellow-500"
-          : "from-purple-100 via-purple-400 to-purple-500"
+          ? "from-yellow-400 via-yellow-600/70 to-yellow-800/50"
+          : "from-purple-400 via-purple-600/70 to-purple-800/50"
           }`}
       >
 
@@ -59,7 +59,7 @@ export default function CharacterCard({ data }: CharacterCardProps) {
       <ParseText
         locale={locale}
         text={text}
-        className="mt-2 px-1 text-center text-base font-normal leading-tight 2xl:text-lg"
+        className="mt-2 px-1 text-center text-shadow-white font-bold leading-tight 2xl:text-lg"
       />
     </li>
 
