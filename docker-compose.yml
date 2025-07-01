@@ -1,0 +1,15 @@
+services:
+  srtools:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: srtools
+    restart: unless-stopped
+    ports:
+      - "3006:3000"
+    networks:
+      - srtools-network
+
+networks:
+  srtools-network:
+    driver: bridge
