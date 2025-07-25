@@ -1,7 +1,7 @@
 import { CharacterBasic, CharacterBasicRaw, EventBasic, EventBasicRaw, LightConeBasic, LightConeBasicRaw, MonsterBasic, MonsterBasicRaw, RelicBasic, RelicBasicEffect, RelicBasicRaw } from "@/types";
 
 export function convertRelicSet(id: string, item: RelicBasicRaw): RelicBasic {
-    let lang = new Map<string, string>([
+    const lang = new Map<string, string>([
         ['en', item.en],
         ['kr', item.kr],
         ['cn', item.cn],
@@ -33,8 +33,7 @@ export function convertRelicSet(id: string, item: RelicBasicRaw): RelicBasic {
 }
 
 export function convertLightcone(id: string, item: LightConeBasicRaw): LightConeBasic {
-
-    let lang = new Map<string, string>([
+    const lang = new Map<string, string>([
         ['en', item.en],
         ['kr', item.kr],
         ['cn', item.cn],
@@ -53,8 +52,7 @@ export function convertLightcone(id: string, item: LightConeBasicRaw): LightCone
 
 
 export function convertAvatar(id: string, item: CharacterBasicRaw): CharacterBasic {
-
-    let lang = new Map<string, string>([
+    const lang = new Map<string, string>([
         ['en', item.en],
         ['kr', item.kr],
         ['cn', item.cn],
@@ -87,7 +85,7 @@ export function convertAvatar(id: string, item: CharacterBasicRaw): CharacterBas
 }
 
 export function convertEvent(id: string, item: EventBasicRaw): EventBasic {
-    let lang = new Map<string, string>([
+    const lang = new Map<string, string>([
         ['en', item.en],
         ['kr', item.kr],
         ['cn', item.cn],
@@ -107,7 +105,7 @@ export function convertEvent(id: string, item: EventBasicRaw): EventBasic {
 }
 
 export function convertMonster(id: string, item: MonsterBasicRaw): MonsterBasic {
-    let lang = new Map<string, string>([
+    const lang = new Map<string, string>([
         ['en', item.en],
         ['kr', item.kr],
         ['cn', item.cn],
