@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { loadLightcones } from '@/lib/lighconeLoader'
+import { loadLightcones } from '@/lib/loader'
 
 export async function GET(
   req: NextRequest,

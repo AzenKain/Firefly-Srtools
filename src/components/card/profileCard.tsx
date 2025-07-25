@@ -1,10 +1,9 @@
+"use client";
 
 import React from 'react';
 import { AvatarProfileCardType } from '@/types';
 import useLocaleStore from '@/stores/localeStore';
-import useAvatarStore from '@/stores/avatarStore';
 import useLightconeStore from '@/stores/lightconeStore';
-import useRelicStore from '@/stores/relicStore';
 import Image from 'next/image';
 import ParseText from '../parseText';
 
@@ -50,7 +49,7 @@ export default function ProfileCard({ profile, selectedProfile, onProfileToggle 
 
             {Object.keys(profile.relics).length > 0 && (
                 <div className="flex flex-wrap items-center justify-center gap-2 mb-4">
-                    {Object.entries(profile.relics).map(([key, relic], index) => (
+                    {Object.values(profile.relics).map((relic, index) => (
                         <div key={index} className="relative">
                             <div className="w-9 h-9 rounded-lg flex items-center justify-center border border-amber-500/50">
                                 <Image

@@ -32,6 +32,7 @@ export default function CharacterCard({ data }: CharacterCardProps) {
             width={376}
             height={512}
             src={`https://api.hakush.in/hsr/UI/avatarshopicon/${data.id}.webp`}
+            priority={true}
             className="w-full h-full rounded-md object-cover"
             alt="ALT"
           />
@@ -39,14 +40,14 @@ export default function CharacterCard({ data }: CharacterCardProps) {
             width={32}
             height={32}
       
-            src={`https://api.hakush.in/hsr/UI/element/${data.damageType.toLowerCase()}.webp`}
+            src={`/icon/${data.damageType.toLowerCase()}.webp`}
             className="absolute top-0 left-0 w-6 h-6 rounded-full"
             alt={data.damageType.toLowerCase()}
           />
           <Image
             width={32}
             height={32}
-            src={`https://api.hakush.in/hsr/UI/pathicon/${data.baseType.toLowerCase()}.webp`}
+            src={`/icon/${data.baseType.toLowerCase()}.webp`}
             className="absolute top-0 right-0 w-6 h-6 rounded-full"
             alt={data.baseType.toLowerCase()}
             style={{

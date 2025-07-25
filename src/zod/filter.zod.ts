@@ -5,7 +5,7 @@ export const filterAvatarTypeSchema = z.object({
   name: z.string(),
   path: z.array(z.string()),
   element: z.array(z.string()),
-  rarity: z.string(),
+  rarity: z.array(z.string()),
   locale: z.string(),
 });
 
@@ -19,4 +19,12 @@ export const filterLightconeTypeSchema = z.object({
 export const filterRelicTypeSchema = z.object({
   locale: z.string(),
   name: z.string(),
+});
+
+export const filterMonsterTypeSchema = z.object({
+  name: z.string(),
+  id: z.string(),
+  rarity: z.array(z.string()),
+  locale: z.string(),
+  weak: z.array(z.string()),
 });

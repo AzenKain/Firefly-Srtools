@@ -1,11 +1,10 @@
+"use client";
 
-import React, { useState, useMemo } from 'react';
+import React from 'react';
 import { CharacterInfoCardType } from '@/types';
-import { getNameChar, replaceByParam } from '@/helper';
 import useLocaleStore from '@/stores/localeStore';
 import useAvatarStore from '@/stores/avatarStore';
 import useLightconeStore from '@/stores/lightconeStore';
-import useRelicStore from '@/stores/relicStore';
 import Image from 'next/image';
 import ParseText from '../parseText';
 
@@ -14,7 +13,6 @@ export default function CharacterInfoCard({ character, selectedCharacters, onCha
     const isSelected = selectedCharacters.some((selectedCharacter) => selectedCharacter.avatar_id === character.avatar_id);
     const { mapAvatarInfo } = useAvatarStore();
     const { mapLightconeInfo } = useLightconeStore();
-    const { mapRelicInfo } = useRelicStore();
     const { locale } = useLocaleStore();
 
     return (
@@ -40,14 +38,14 @@ export default function CharacterInfoCard({ character, selectedCharacters, onCha
                     <Image
                         width={48}
                         height={48}
-                        src={`https://api.hakush.in/hsr/UI/element/${mapAvatarInfo[character.avatar_id.toString()]?.DamageType.toLowerCase()}.webp`}
+                        src={`/icon/${mapAvatarInfo[character.avatar_id.toString()]?.DamageType.toLowerCase()}.webp`}
                         className="absolute top-0 left-0 w-10 h-10 rounded-full"
                         alt={mapAvatarInfo[character.avatar_id.toString()]?.DamageType.toLowerCase()}
                     />
                     <Image
                         width={48}
                         height={48}
-                        src={`https://api.hakush.in/hsr/UI/pathicon/${mapAvatarInfo[character.avatar_id.toString()]?.BaseType.toLowerCase()}.webp`}
+                        src={`/icon/${mapAvatarInfo[character.avatar_id.toString()]?.BaseType.toLowerCase()}.webp`}
                         className="absolute top-0 right-0 w-10 h-10 rounded-full"
                         alt={mapAvatarInfo[character.avatar_id.toString()]?.BaseType.toLowerCase()}
                         style={{

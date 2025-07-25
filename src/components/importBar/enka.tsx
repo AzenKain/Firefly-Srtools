@@ -2,7 +2,7 @@
 import { useState } from "react";
 import CharacterInfoCard from "../card/characterInfoCard";
 import useEnkaStore from "@/stores/enkaStore";
-import { SendDataThroughProxy } from "@/lib/api";
+import { SendDataThroughProxy } from "@/lib/api/api";
 import { CharacterInfoCardType, EnkaResponse } from "@/types";
 import useUserDataStore from "@/stores/userDataStore";
 import { converterOneEnkaDataToAvatarStore } from "@/helper";
@@ -21,7 +21,7 @@ export default function EnkaImport() {
     } = useEnkaStore();
     const transI18n = useTranslations("DataPage")
     const { avatars, setAvatar } = useUserDataStore();
-    const { isOpenImport, setIsOpenImport } = useModelStore()
+    const { setIsOpenImport } = useModelStore()
     const [isLoading, setIsLoading] = useState(false)
     const [Error, setError] = useState("")
 
@@ -191,7 +191,7 @@ export default function EnkaImport() {
                 )}
                 {/* Character Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                    {enkaData?.detailInfo.avatarDetailList.map((character, index) => (
+                    {enkaData?.detailInfo.avatarDetailList.map((character) => (
                         <CharacterInfoCard
                             key={character.avatarId}
                             character={{

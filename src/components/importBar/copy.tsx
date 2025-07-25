@@ -1,16 +1,15 @@
 "use client"
-import useModelStore from "@/stores/modelStore";
 import useUserDataStore from "@/stores/userDataStore";
 import { useEffect, useState } from "react";
 import useCopyProfileStore from "@/stores/copyProfile";
 import ProfileCard from "../card/profileCard";
 import { AvatarProfileCardType, AvatarProfileStore } from "@/types";
 import Image from "next/image";
-import SelectCustom from "../select";
 import useListAvatarStore from "@/stores/avatarStore";
 import { getNameChar } from "@/helper";
 import useLocaleStore from "@/stores/localeStore";
 import { useTranslations } from "next-intl";
+import SelectCustomImage from "../select/customSelectImage";
 
 export default function CopyImport() {
     const { avatars, setAvatar } = useUserDataStore();
@@ -50,6 +49,7 @@ export default function CopyImport() {
             element: Object.keys(listElement).filter((key) => listElement[key]),
             rarity: Object.keys(listRank).filter((key) => listRank[key])
         })
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [listPath, listRank, locale])
 
     const clearSelection = () => {
@@ -101,7 +101,7 @@ export default function CopyImport() {
             return;
         }
 
-        const newListProfile = avatars[avatarCopySelected.id.toString()].profileList.map((profile, index) => {
+        const newListProfile = avatars[avatarCopySelected.id.toString()].profileList.map((profile) => {
             if (!profile.lightcone?.item_id && Object.keys(profile.relics).length == 0) {
                 return null;
             }
@@ -149,7 +149,7 @@ export default function CopyImport() {
                                                     backgroundColor: listPath[key] ? "#374151" : "#6B7280"
                                                 }}>
                                                 <Image
-                                                    src={`https://api.hakush.in/hsr/UI/pathicon/${key}.webp`}
+                                                    src={`/icon/${key}.webp`}
                                                     alt={key}
                                                     className="h-[32px] w-[32px] object-contain rounded-md"
                                                     width={200}
@@ -174,7 +174,7 @@ export default function CopyImport() {
                                                     backgroundColor: listElement[key] ? "#374151" : "#6B7280"
                                                 }}>
                                                 <Image
-                                                    src={`https://api.hakush.in/hsr/UI/element/${key}.webp`}
+                                                    src={`/icon/${key}.webp`}
                                                     alt={key}
                                                     className="h-[28px] w-[28px] 2xl:h-[40px] 2xl:w-[40px] object-contain rounded-md"
                                                     width={200}
@@ -210,7 +210,7 @@ export default function CopyImport() {
                             <div>
                                 <div>{transI18n("characterName")}</div>
                                 {listCopyAvatar.length > 0 && (
-                                    <SelectCustom
+                                    <SelectCustomImage
                                         customSet={listCopyAvatar.map((avatar) => ({
                                             value: avatar.id.toString(),
                                             label: getNameChar(locale, avatar),

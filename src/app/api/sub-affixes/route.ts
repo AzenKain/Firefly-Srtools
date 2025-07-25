@@ -1,4 +1,4 @@
-import { loadSubAffix } from "@/lib/affixLoader";
+import { loadSubAffix } from "@/lib/loader";
 import { NextResponse } from "next/server";
 
 export async function GET() {

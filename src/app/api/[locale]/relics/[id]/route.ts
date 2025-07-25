@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { loadRelics } from '@/lib/relicLoader'
+import { loadRelics } from '@/lib/loader'
 
 export async function GET(
   req: NextRequest,

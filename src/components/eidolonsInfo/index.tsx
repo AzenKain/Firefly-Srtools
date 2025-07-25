@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 "use client"
 import { replaceByParam } from "@/helper";
 import useListAvatarStore from "@/stores/avatarStore";
@@ -30,8 +31,8 @@ export default function EidolonsInfo() {
                             className="flex flex-col items-center cursor-pointer hover:scale-105"
                             onClick={() => {
                                 let newRank = Number(key)
-                                if (Number(key) == 1 && avatars[avatarSelected?.id || ""]?.data?.rank == 1) {
-                                    newRank = 0
+                                if (avatars[avatarSelected?.id || ""]?.data?.rank == Number(key)) {
+                                    newRank = Number(key) - 1
                                 }
                                 setAvatars({ ...avatars, [avatarSelected?.id || ""]: { ...avatars[avatarSelected?.id || ""], data: { ...avatars[avatarSelected?.id || ""].data, rank: newRank } } })
                             }}

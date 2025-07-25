@@ -65,18 +65,52 @@ export const battleBuffStoreSchema = z.object({
   dynamic_key: dynamicKeyStoreSchema.optional(),
 });
 
-export const battleConfigStoreSchema = z.object({
-  battle_type: z.string(),
+export const mOCConfigStoreSchema = z.object({
+  event_id: z.number(),
+  challenge_id: z.number(),
+  floor_side: z.string(),
+  use_turbulence_buff: z.boolean(),
+  use_cycle_count: z.boolean(),
   blessings: z.array(battleBuffStoreSchema),
-  custom_stats: z.array(subAffixStoreSchema),
   cycle_count: z.number(),
   stage_id: z.number(),
-  path_resonance_id: z.number(),
   monsters: z.array(z.array(monsterStoreSchema)),
 });
 
+export const pFConfigStoreSchema = z.object({
+  event_id: z.number(),
+  challenge_id: z.number(),
+  floor_side: z.string(),
+  buff_id: z.number(),
+  blessings: z.array(battleBuffStoreSchema),
+  cycle_count: z.number(),
+  stage_id: z.number(),
+  monsters: z.array(z.array(monsterStoreSchema)),
+});
+
+export const aSConfigStoreSchema = z.object({
+  event_id: z.number(),
+  challenge_id: z.number(),
+  buff_id: z.number(),
+  floor_side: z.string(),
+  blessings: z.array(battleBuffStoreSchema),
+  cycle_count: z.number(),
+  stage_id: z.number(),
+  monsters: z.array(z.array(monsterStoreSchema)),
+});
+
+export const cEConfigStoreSchema = z.object({
+  blessings: z.array(battleBuffStoreSchema),
+  cycle_count: z.number(),
+  stage_id: z.number(),
+  monsters: z.array(z.array(monsterStoreSchema)),
+});
 
 export const micsSchema = z.object({
-    avatars: z.record(z.string(), avatarStoreSchema),
-    battle_config: battleConfigStoreSchema,
-})
+  avatars: z.record(avatarStoreSchema),
+  battle_type: z.string(),
+  moc_config: mOCConfigStoreSchema,
+  pf_config: pFConfigStoreSchema,
+  as_config: aSConfigStoreSchema,
+  ce_config: cEConfigStoreSchema,
+});

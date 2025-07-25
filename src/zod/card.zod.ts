@@ -19,3 +19,14 @@ export const characterInfoCardTypeSchema = z.object({
     }),
   ),
 });
+
+const lightconeStoreSchema = z.any();
+
+const relicStoreSchema = z.any();
+
+export const avatarProfileCardTypeSchema = z.object({
+  key: z.number(),
+  profile_name: z.string(),
+  lightcone: lightconeStoreSchema.nullable(),
+  relics: z.record(relicStoreSchema),
+});

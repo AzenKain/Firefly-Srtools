@@ -1,4 +1,4 @@
-import { loadLightcones } from "@/lib/lighconeLoader";
+import { loadLightcones } from "@/lib/loader";
 import { NextRequest, NextResponse } from "next/server";
 
 export async function POST(request: NextRequest, { params }: { params: Promise<{ locale: string }> }) {

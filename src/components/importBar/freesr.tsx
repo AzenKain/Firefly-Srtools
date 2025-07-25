@@ -12,8 +12,8 @@ import { converterOneFreeSRDataToAvatarStore } from "@/helper";
 import { useTranslations } from "next-intl";
 
 export default function FreeSRImport() {
-    const { avatars, setAvatar, setBattleConfig } = useUserDataStore();
-    const { isOpenImport, setIsOpenImport } = useModelStore()
+    const { avatars, setAvatar } = useUserDataStore();
+    const { setIsOpenImport } = useModelStore()
     const [isLoading, setIsLoading] = useState(false)
     const [Error, setError] = useState("")
     const { freeSRData, setFreeSRData, selectedCharacters, setSelectedCharacters } = useFreeSRStore()
@@ -33,7 +33,7 @@ export default function FreeSRImport() {
 
     const selectAll = () => {
         if (freeSRData) {
-            setSelectedCharacters(Object.entries(freeSRData?.avatars).map(([key, character]) => {
+            setSelectedCharacters(Object.values(freeSRData?.avatars).map((character) => {
                 const lightcone = freeSRData.lightcones.find((lightcone) => lightcone.equip_avatar === character.avatar_id)
                 const relics = freeSRData.relics.filter((relic) => relic.equip_avatar === character.avatar_id)
                 return {
@@ -84,7 +84,7 @@ export default function FreeSRImport() {
                     setFreeSRData(parsed)
                     setError("")
 
-                    setSelectedCharacters(Object.entries(parsed?.avatars || {}).map(([key, character]) => {
+                    setSelectedCharacters(Object.values(parsed?.avatars || {}).map((character) => {
                         const lightcone = parsed?.lightcones.find((lightcone) => lightcone.equip_avatar === character.avatar_id)
                         const relics = parsed?.relics.filter((relic) => relic.equip_avatar === character.avatar_id)
                         return {
@@ -104,7 +104,7 @@ export default function FreeSRImport() {
                             })) ?? [],
                         } as CharacterInfoCardType
                     }));
-                } catch (error) {
+                } catch {
                     setSelectedCharacters([])
                     setFreeSRData(null)
                     setError(transI18n("fileIsNotAValidFreeSRJsonFile"))
@@ -128,8 +128,8 @@ export default function FreeSRImport() {
         setError("");
 
         const listAvatars = { ...avatars }
-        const filterData = Object.entries(freeSRData?.avatars || {}).filter(([key, character]) => selectedCharacters.some((selectedCharacter) => selectedCharacter.avatar_id === character.avatar_id))
-        filterData.forEach(([key, character]) => {
+        const filterData = Object.values(freeSRData?.avatars || {}).filter((character) => selectedCharacters.some((selectedCharacter) => selectedCharacter.avatar_id === character.avatar_id))
+        filterData.forEach((character) => {
             const newAvatar = { ...listAvatars[character.avatar_id] }
             if (Object.keys(newAvatar).length !== 0) {
                 newAvatar.level = character.level
@@ -147,7 +147,6 @@ export default function FreeSRImport() {
             }
 
         })
-        setBattleConfig(freeSRData?.battle_config)
         setIsOpenImport(false)
         toast.success(transI18n("importFreeSRDataSuccess"))
     }
@@ -200,7 +199,7 @@ export default function FreeSRImport() {
                 )}
                 {/* Character Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                    {Object.entries(freeSRData?.avatars || {}).map(([key, character]) => {
+                    {Object.values(freeSRData?.avatars || {}).map((character) => {
                         const lightcone = freeSRData?.lightcones.find((lightcone) => lightcone.equip_avatar === character.avatar_id)
                         const relics = freeSRData?.relics.filter((relic) => relic.equip_avatar === character.avatar_id)
                         return (

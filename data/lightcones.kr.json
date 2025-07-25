@@ -18206,7 +18206,7 @@
   },
   "21053": {
     "Name": "언제나 여정이 평탄하기를",
-    "Desc": "소년은 별처럼 쏟아지는 빗속을 달리며, 오랜 가뭄 끝에 내린 단비에 환호했다.\\n\\n그 비는 아주 오랫동안 내렸고, 수레는 초록빛으로 뒤덮인 땅에 멈춰 섰다.\\n<i>「엄마, 누나, 이제 더 이상 굶거나 추위에 떨지 않아도 돼!」\\n</i>에브긴인들의 모닥불은 긴 밤을 따뜻하게 밝혔고, 소년은 누나의 이야기를 들으며 아침을 기다렸다.\\n\\n<i>「카카바샤, 너도 지모신께서 주신 행운으로 우리가 할 수 없는 일을 해낼 거야…. 언제나 여정이 평탄하며, 영원히 계략을 들키는 일이 없기를……」</i>\\n\\n황금빛 햇살이 꿈에서 새어나와 현실 속 거처를 비추자, 거래와 숫자가 또다시 시야에 들어왔다.\\n그는 움켜쥐었던 손을 풀었다——\\n\\n마치 아무것도 잡지 못한 것처럼, 마치 아직 온기가 남아 있는 것처럼",
+    "Desc": "소년은 별처럼 쏟아지는 빗속을 달리며, 오랜 가뭄 끝에 내린 단비에 환호했다.\\n\\n그 비는 아주 오랫동안 내렸고, 수레는 초록빛으로 뒤덮인 땅에 멈춰 섰다.\\n<i>「엄마, 누나, 이제 더 이상 굶거나 추위에 떨지 않아도 돼!」\\n</i>에브긴인들의 모닥불은 긴 밤을 따뜻하게 밝혔고, 소년은 누나의 이야기를 들으며 아침을 기다렸다.\\n\\n<i>「카카바샤, 너도 지모신께서 주신 행운으로 우리가 할 수 없는 일을 해낼 거야…. 너의 언제나 여정이 평탄하며, 영원히 계략을 들키는 일이 없기를……」</i>\\n\\n황금빛 햇살이 꿈에서 새어나와 현실의 거처를 비추자, 거래와 숫자가 또다시 시야에 들어왔다.\\n그는 움켜쥐었던 손을 풀었다——\\n\\n마치 아무것도 잡지 못한 것처럼, 마치 온기가 아직 남아 있는 것처럼",
     "Rarity": "CombatPowerLightconeRarity4",
     "BaseType": "Knight",
     "Refinements": {
@@ -18695,7 +18695,7 @@
   },
   "21055": {
     "Name": "내일의 내일이 올 때까지",
-    "Desc": "<i>「트리스비오스, 내일 봐……」</i>\\n\\n어머니가 먼 길을 떠날 때 소녀는 그녀의 얼굴에 흐르는 눈물을 닦았다.\\n\\n그녀는 자신이 어머니처럼 될 때까지 수많은 내일을 기다렸다.\\n그녀는 불씨를 움켜쥔 채 문 앞에 섰다. 그러자 귓가에 어머니의 말이 들려왔다.\\n\\n<i>「그곳에는 눈보라도, 추위도, 폭우도 없을 거란다……」</i>\\n\\n<i>「하지만 내일 만나지 못한다면……」</i>\\n\\n그녀는 유성이 하늘을 가르듯 어린아이의 모습만을 남긴 채 땅으로 추락했다.\\n\\n<i>「내일의 내일 보자!」</i>",
+    "Desc": "<i>「트리스비오스, 내일 봐……」</i>\\n\\n어머니가 먼 길을 떠날 때 소녀는 그녀의 얼굴에 흐르는 눈물을 닦았다.\\n\\n그녀는 자신이 어머니처럼 성장할 때까지 수많은 내일을 기다렸다.\\n그녀는 불씨를 움켜쥔 채 문 앞에 섰다. 그러자 귓가에 어머니의 말이 들려왔다.\\n\\n<i>「그곳에는 눈보라도, 추위도, 폭우도 없을 거란다……」</i>\\n\\n<i>「하지만 내일 만나지 못한다면……」</i>\\n\\n그녀는 유성이 하늘을 가르듯 어린아이의 모습만을 남긴 채 대지로 떨어졌다.\\n\\n<i>「내일의 내일 보자!」</i>",
     "Rarity": "CombatPowerLightconeRarity4",
     "BaseType": "Priest",
     "Refinements": {
@@ -18946,7 +18946,7 @@
     "Rarity": "CombatPowerLightconeRarity4",
     "BaseType": "Shaman",
     "Refinements": {
-      "Name": "당황",
+      "Name": "허둥지둥",
       "Desc": "전투 진입 후 모든 아군이 가하는 격파 피해가 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> 증가한다. 같은 유형의 스킬 효과는 중복 적용되지 않는다",
       "Level": {
         "1": {
@@ -19421,7 +19421,7 @@
   },
   "21058": {
     "Name": "과거의 핏자국",
-    "Desc": "폭풍이 먼 곳에서 일렁이고 저승의 바다에서 손이 튀어나와 수상한 생명체를 놀리는 듯하다.\\n바다 괴물의 잔해에서 하늘로 솟구치는 파도가 돌멩이처럼 해연으로 추락한다.\\n\\n그들은 싸우는 포효가 열 낮과 밤 이어지고, 천둥소리를 넘었다고 한다.\\n그들은 천만 개의 목숨이 있어도 죽음의 바다에 맞설 수 없다고 한다.\\n\\n용맹함으로 미숙함을 씻어내고 거만함으로 나약함을 씻어낸 후——\\n\\n왜소한 그 몸은 해안가에 비틀거리며 올라왔다. 당시 해가 떠오르고 바닷물은 지난 날에 흘린 피와 같았다",
+    "Desc": "먼 곳에서 폭풍이 형성되고 있는 가운데, 저승의 바다에서 튀어나온 촉수는 표류하는 나약한 생명체를 괴롭히려는 듯했다.\\n바다 괴물의 잘린 촉수는 하늘로 솟구치는 파도를 내려치더니 돌멩이처럼 부서지고 해연으로 추락했다.\\n\\n사람들은 포효가 열 차례의 밤낮 동안 이어지고, 천둥소리를 뒤덮을 정도로 컸다고 했다.\\n사람들은 만 개의 목숨이 있어도 저승의 바다에 맞설 수 없다고 했다.\\n\\n용맹함으로 미숙함을 씻어내고, 거만함으로 나약함을 씻어내고 나서야——\\n\\n왜소한 그 몸은 비틀거리며 해안가에 올라왔다. 해가 이제 막 떠오르고, 바닷물은 마치 지난날에 흘린 피와 같았다",
     "Rarity": "CombatPowerLightconeRarity4",
     "BaseType": "Warrior",
     "Refinements": {
@@ -19905,7 +19905,7 @@
   },
   "21061": {
     "Name": "휴일의 목욕탕 대모험",
-    "Desc": "<i>「히아, 우리 새로 생긴 특색 목욕탕에 가보자!」</i>\\n\\n오크마에서 진료를 마친 소녀는 호기심에 가득 찬 채로 아이와 함께 각양각색의 목욕탕에 들어갔다.\\n\\n<i>「과일즙 안마, 한번 받아 보실래요?」</i>\\n소녀는 붉은 두 손을 보곤, 의욕 넘치는 이카를 껴안은 채 몇걸음 뒤로 물러났다——\\n<i>「과일즙은… 마시는 걸 더 선호해요……」</i>\\n\\n<i>「드로마스가 등 밟아드립니다! 기간 한정 할인 중이에요!」</i>\\n호기심 많은 드로마스가 고개를 숙이자, 콧바람이 소녀의 머리카락을 스쳤다.\\n<i>「다, 다음에 꼭 해볼게요!」</i>\\n\\n<i>「몸이 건강해지는 약초탕입니다. 몇 분이세요?」</i>\\n소녀는 향긋한 약초 향을 맡으며 조심스레 탕 안으로 발을 들였다.\\n<i>「몸에 아주 좋을 것 같아요……」</i>\\n\\n<i>「두, 두두!」</i>\\n이카가 물속에서 신나게 배영을 하기 시작했다.\\n<i>「이카도 많이 지쳤나보네……」</i>\\n\\n모처럼의 휴가에 소녀는 포도즙을 마시며 적발의 아이와 잠을 잘 자는 비결부터 디저트를 만드는 방법까지 다양한 이야기를 나눴다.\\n\\n<i>「큰일이야… 이, 이카가!」</i>\\n놀란 아이의 외침이 목욕탕의 고요함을 깨뜨렸다.\\n\\n<i>「두……」\\n「이카, 조금만 버텨!」</i>",
+    "Desc": "<i>「히아, 우리 새로 생긴 특색 목욕탕에 가보자!」</i>\\n\\n오크마에서 진료를 마친 소녀는 호기심에 가득 찬 채로 아이와 함께 각양각색의 목욕탕에 들어갔다.\\n\\n<i>「과일즙 안마, 한번 받아 보실래요?」</i>\\n소녀는 붉은 두 손을 보곤, 의욕 넘치는 이카를 껴안은 채 몇걸음 뒤로 물러났다——\\n<i>「과일즙은… 마시는 걸 더 선호해서요……」</i>\\n\\n<i>「드로마스가 등 밟아드립니다! 기간 한정 할인 중이에요!」</i>\\n호기심 많은 드로마스가 고개를 숙이자, 콧바람이 소녀의 머리카락을 스쳤다.\\n<i>「다, 다음에 꼭 해볼게요!」</i>\\n\\n<i>「몸이 건강해지는 약초탕입니다. 몇 분이세요?」</i>\\n소녀는 향긋한 약초 향을 맡으며 조심스레 탕 안으로 발을 들였다.\\n<i>「몸에 아주 좋을 것 같아요……」</i>\\n\\n<i>「두, 두두!」</i>\\n이카가 물속에서 신나게 배영을 하기 시작했다.\\n<i>「이카도 많이 지쳤나보네……」</i>\\n\\n모처럼의 휴가에 소녀는 포도즙을 마시며 적발의 아이와 잠을 잘 자는 비결부터 디저트를 만드는 방법까지 다양한 이야기를 나눴다.\\n\\n<i>「큰일이야… 이, 이카가!」</i>\\n놀란 아이의 외침이 목욕탕의 고요함을 깨뜨렸다.\\n\\n<i>「두……」\\n「이카, 조금만 버텨!」</i>",
     "Rarity": "CombatPowerLightconeRarity4",
     "BaseType": "Warlock",
     "Refinements": {
@@ -20157,7 +20157,7 @@
   },
   "21062": {
     "Name": "그 종착지에서 다시 만나자",
-    "Desc": "분함의 눈물이 뺨을 타고 흘러내렸다. 파괴된 법진 중앙에 남은 것은 죽음의 그림자, 그리고 끝없는 고요함과 공허함이었다.\\n\\n그때, 어둠 속에서 탄식이 들려왔다. 그것은 「영혼」의 떨림이었다.\\n<i>「…누나?」</i>\\n소년은 손을 들어 올렸고, 그 눈동자에는 한 줄기 빛이 스쳤다. 가족의 모습은 아주 잠시 머물렀지만, 그 순간은 그의 마음속에서 천 년 동안 멈춰 있는 듯했다.\\n\\n<i>「알겠어…. 마지막으로 작별 인사를 하러 와줘서 고마워」</i>\\n그는 천천히 몸을 일으켰고, 첫 번째 아침 햇살이 단호한 얼굴과 마르지 않은 눈물 자국을 비췄다.\\n\\n<i>「탐구는 길고 고독한 여정이 될 테니, 우린 종착점에서 다시 만나자……」</i>",
+    "Desc": "분노의 눈물이 뺨을 타고 흘러내렸다. 파괴된 법진 중앙에 남은 것은 죽음의 그림자, 그리고 끝없는 고요함과 공허함이었다.\\n\\n그때, 어둠 속에서 탄식이 들려왔다. 그것은 「영혼」의 떨림이었다.\\n<i>「…누나?」</i>\\n소년은 손을 들어 올렸고, 그 눈동자에는 한 줄기 빛이 스쳤다. 가족의 모습은 아주 잠시 머물렀지만, 그 순간은 그의 마음속에서 천년 동안 멈춰 있는 듯했다.\\n\\n<i>「알겠어…. 마지막으로 작별 인사를 하러 와줘서 고마워」</i>\\n그는 천천히 몸을 일으켰고, 첫 번째 아침 햇살이 단호한 얼굴과 마르지 않은 눈물 자국을 비췄다.\\n\\n<i>「탐구는 길고 고독한 여정이 될 테니, 우린 종착지에서 다시 만나자……」</i>",
     "Rarity": "CombatPowerLightconeRarity4",
     "BaseType": "Rogue",
     "Refinements": {
@@ -21609,6 +21609,253 @@
       },
       {
         "EquipmentID": 22004,
+        "Promotion": 6,
+        "PromotionCostList": [],
+        "WorldLevelRequire": 5,
+        "MaxLevel": 80,
+        "BaseHP": 440.64000000059605,
+        "BaseHPAdd": 6.480000000447035,
+        "BaseAttack": 220.32000000029802,
+        "BaseAttackAdd": 3.2400000002235174,
+        "BaseDefence": 153,
+        "BaseDefenceAdd": 2.2500000002328306
+      }
+    ]
+  },
+  "22005": {
+    "Name": "영원한 미궁의 식사",
+    "Desc": "우르릉 쾅쾅——\\n미궁 밖, 비바람이 끊임없이 휘몰아친다.\\n보글보글——\\n요정들의 신기한 거대 솥이 펄펄 끓는다.\\n\\n<i>「특제 향신료를 뿌리고…」</i>\\n<i>「신선한 채소를 넣자!」</i>\\n<i>「이번에는 분명 성공할 수 있을 거야!」</i>\\n\\n솥이 또다시 보글보글 끓었고, 요정들은 솥을 간절하게 바라봤다.\\n<i>「온다, 온다!」</i>\\n강렬한 빛이 솥 아래에서 뿜어져 나왔다——\\n\\n이에 모두가 모여들었다!\\n\\n……\\n\\n향기로운 연회에서 손님들은 잔을 들고 함께 기묘한 세월을 축하한다——\\n\\n이 꿈속의 낙원이 영원히 따뜻하고, 영원히 즐겁기를!",
+    "Rarity": "CombatPowerLightconeRarity4",
+    "BaseType": "Shaman",
+    "Refinements": {
+      "Name": "최고!",
+      "Desc": "장착한 캐릭터의 공격력이 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> 증가한다. 장착한 캐릭터가 전투 스킬 발동 후 공격력이 <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> 증가한다, 해당 효과 최대 중첩수: <unbreak>#3[i]</unbreak>스택",
+      "Level": {
+        "1": {
+          "ParamList": [
+            0.1600000001490116,
+            0.0800000000745058,
+            3
+          ]
+        },
+        "2": {
+          "ParamList": [
+            0.20000000018626451,
+            0.10000000009313226,
+            3
+          ]
+        },
+        "3": {
+          "ParamList": [
+            0.24000000022351742,
+            0.12000000011175871,
+            3
+          ]
+        },
+        "4": {
+          "ParamList": [
+            0.2800000002607703,
+            0.14000000013038516,
+            3
+          ]
+        },
+        "5": {
+          "ParamList": [
+            0.3200000002980232,
+            0.1600000001490116,
+            3
+          ]
+        }
+      }
+    },
+    "Stats": [
+      {
+        "EquipmentID": 22005,
+        "PromotionCostList": [
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 2,
+            "ItemNum": 4000,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 115001,
+            "ItemNum": 5,
+            "Rarity": "NotNormal"
+          }
+        ],
+        "PlayerLevelRequire": 15,
+        "MaxLevel": 20,
+        "BaseHP": 43.200000000186265,
+        "BaseHPAdd": 6.480000000447035,
+        "BaseAttack": 21.600000000558794,
+        "BaseAttackAdd": 3.2400000002235174,
+        "BaseDefence": 15,
+        "BaseDefenceAdd": 2.2500000002328306
+      },
+      {
+        "EquipmentID": 22005,
+        "Promotion": 1,
+        "PromotionCostList": [
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 2,
+            "ItemNum": 8000,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 110231,
+            "ItemNum": 3,
+            "Rarity": "NotNormal"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 115001,
+            "ItemNum": 10,
+            "Rarity": "NotNormal"
+          }
+        ],
+        "WorldLevelRequire": 1,
+        "MaxLevel": 30,
+        "BaseHP": 95.04000000003725,
+        "BaseHPAdd": 6.480000000447035,
+        "BaseAttack": 47.52000000048429,
+        "BaseAttackAdd": 3.2400000002235174,
+        "BaseDefence": 33,
+        "BaseDefenceAdd": 2.2500000002328306
+      },
+      {
+        "EquipmentID": 22005,
+        "Promotion": 2,
+        "PromotionCostList": [
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 2,
+            "ItemNum": 16000,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 110232,
+            "ItemNum": 3,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 115002,
+            "ItemNum": 6,
+            "Rarity": "Rare"
+          }
+        ],
+        "WorldLevelRequire": 2,
+        "MaxLevel": 40,
+        "BaseHP": 164.160000000149,
+        "BaseHPAdd": 6.480000000447035,
+        "BaseAttack": 82.0800000000745,
+        "BaseAttackAdd": 3.2400000002235174,
+        "BaseDefence": 57,
+        "BaseDefenceAdd": 2.2500000002328306
+      },
+      {
+        "EquipmentID": 22005,
+        "Promotion": 3,
+        "PromotionCostList": [
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 2,
+            "ItemNum": 40000,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 110232,
+            "ItemNum": 6,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 115002,
+            "ItemNum": 9,
+            "Rarity": "Rare"
+          }
+        ],
+        "WorldLevelRequire": 3,
+        "MaxLevel": 50,
+        "BaseHP": 233.28000000026077,
+        "BaseHPAdd": 6.480000000447035,
+        "BaseAttack": 116.64000000059605,
+        "BaseAttackAdd": 3.2400000002235174,
+        "BaseDefence": 81,
+        "BaseDefenceAdd": 2.2500000002328306
+      },
+      {
+        "EquipmentID": 22005,
+        "Promotion": 4,
+        "PromotionCostList": [
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 2,
+            "ItemNum": 80000,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 110233,
+            "ItemNum": 4,
+            "Rarity": "VeryRare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 115003,
+            "ItemNum": 5,
+            "Rarity": "VeryRare"
+          }
+        ],
+        "WorldLevelRequire": 4,
+        "MaxLevel": 60,
+        "BaseHP": 302.40000000037253,
+        "BaseHPAdd": 6.480000000447035,
+        "BaseAttack": 151.20000000018626,
+        "BaseAttackAdd": 3.2400000002235174,
+        "BaseDefence": 105,
+        "BaseDefenceAdd": 2.2500000002328306
+      },
+      {
+        "EquipmentID": 22005,
+        "Promotion": 5,
+        "PromotionCostList": [
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 2,
+            "ItemNum": 160000,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 110233,
+            "ItemNum": 8,
+            "Rarity": "VeryRare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 115003,
+            "ItemNum": 7,
+            "Rarity": "VeryRare"
+          }
+        ],
+        "WorldLevelRequire": 5,
+        "MaxLevel": 70,
+        "BaseHP": 371.5200000004843,
+        "BaseHPAdd": 6.480000000447035,
+        "BaseAttack": 185.7600000007078,
+        "BaseAttackAdd": 3.2400000002235174,
+        "BaseDefence": 129,
+        "BaseDefenceAdd": 2.2500000002328306
+      },
+      {
+        "EquipmentID": 22005,
         "Promotion": 6,
         "PromotionCostList": [],
         "WorldLevelRequire": 5,
@@ -32550,7 +32797,7 @@
   },
   "23043": {
     "Name": "바람에 흩날리는 거짓말",
-    "Desc": "고양이 귀 소녀가 지붕에서 몸을 쭉 펴고 야경 속으로 들어갔다.\\n천 년 동안 침묵했던 보물 창고에서 소녀는 가뿐하게 왔다갔다 움직이며, 보물을 품에 안고 소리 없이 도망쳤다.\\n<i>「어리석은 운명 따위 날 쫓아올 수 없지!」</i>\\n\\n폐허에 불어오는 황야의 냄새가 섞인 바람은 소녀의 후드를 건드렸다.\\n소녀는 차가운 돌을 베고 누워 거친 식량을 삼키며 손끝에 있는 금화를 갖고 놀았다.\\n\\n먼 곳에서 나는 작은 소리가 그녀의 두 귀에 들려왔다. 여명의 빛이 비추는 거룩한 도시에서 북적거리는 사람들은 여전히 축제와 따뜻함을 즐기고 있었다.\\n<i>「얼마나 더 필요하지… 1년, 아니면 만 년?」</i>\\n\\n그녀는 기지개를 켜고 불안한 생각을 무시했다.\\n<i>「후후, 사이퍼라는 늘 마지막까지 웃을 테니까!」</i>\\n\\n금색 번개가 하늘을 갈랐고, 소녀의 선언이 여전히 바람 속에 흩날렸다.\\n——천 년 전과 다름없이 말이다",
+    "Desc": "고양이 귀 소녀가 지붕에서 몸을 쭉 펴고 야경 속으로 들어갔다.\\n천년 동안 침묵했던 보물 창고에서 소녀는 가뿐하게 왔다갔다 움직이며, 보물을 품에 안고 소리 없이 도망쳤다.\\n<i>「어리석은 운명 따위 날 쫓아올 수 없지!」</i>\\n\\n폐허에 불어오는 황야의 냄새가 섞인 바람이 소녀의 후드를 건드렸다.\\n소녀는 차가운 돌을 베고 누워 거친 식량을 삼키며 손끝에 있는 금화를 갖고 놀았다.\\n\\n먼 곳에서 나는 작은 소리가 그녀의 두 귀에 들려왔다. 여명의 빛이 비추는 거룩한 도시에서 북적거리는 사람들은 여전히 축제와 따뜻함을 즐기고 있었다.\\n<i>「얼마나 더 필요하지… 1년, 아니면 만 년?」</i>\\n\\n그녀는 기지개를 켜고 불안한 생각을 무시했다.\\n<i>「후후, 사이퍼라는 늘 마지막까지 웃을 테니까!」</i>\\n\\n금색 번개가 하늘을 갈랐고, 소녀의 선언이 여전히 바람 속에 흩날렸다.\\n——천년 전과 다름없이 말이다",
     "Rarity": "CombatPowerLightconeRarity5",
     "BaseType": "Warlock",
     "Refinements": {
@@ -32822,7 +33069,7 @@
     "BaseType": "Warrior",
     "Refinements": {
       "Name": "상실",
-      "Desc": "장착한 캐릭터의 기본 속도가 <color=#f29e38ff><unbreak>#1[i]</unbreak></color> 증가하고, 피해를 가할 시 목표의 방어력을 <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> 무시한다. 장착한 캐릭터가 필살기 발동 후 [뜨거운 태양]을 획득하며, 턴 시작 시 해제된다. [뜨거운 태양] 보유 시 장착한 캐릭터가 가하는 피해가 <color=#f29e38ff><unbreak>#3[i]%</unbreak></color> 증가한다",
+      "Desc": "장착한 캐릭터의 기본 속도가 <color=#f29e38ff><unbreak>#1[i]</unbreak></color> 증가하고, 피해를 가할 시 목표의 방어력을 <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> 무시한다. 장착한 캐릭터가 필살기를 발동하면 [뜨거운 태양]을 획득하며, 턴 시작 시 해제된다. [뜨거운 태양] 보유 시 장착한 캐릭터가 가하는 피해가 <color=#f29e38ff><unbreak>#3[i]%</unbreak></color> 증가한다",
       "Level": {
         "1": {
           "ParamList": [
@@ -33069,7 +33316,7 @@
     "BaseType": "Warrior",
     "Refinements": {
       "Name": "기사왕",
-      "Desc": "장착한 캐릭터의 치명타 피해가 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> 증가한다. 필살기 발동 시 장착한 캐릭터의 공격력이 <color=#f29e38ff><unbreak>#6[i]%</unbreak></color> 증가하며, 장착한 캐릭터의 에너지 최대치가 <unbreak>#3[i]</unbreak>pt 이상일 경우 장착한 캐릭터의 에너지를 장착한 캐릭터 에너지 최대치의 <unbreak>#5[i]%</unbreak>만큼 고정으로 회복하고, 장착한 캐릭터의 공격력을 <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> 증가시킨다, 지속 시간: <unbreak>#4[i]</unbreak>턴",
+      "Desc": "장착한 캐릭터의 치명타 피해가 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> 증가한다. 필살기 발동 시 장착한 캐릭터의 공격력이 <color=#f29e38ff><unbreak>#6[i]%</unbreak></color> 증가하며, 장착한 캐릭터의 에너지 최대치가 <unbreak>#3[i]</unbreak>pt 이상일 경우 장착한 캐릭터의 에너지를 장착한 캐릭터 에너지 최대치의 <unbreak>#5[i]%</unbreak>만큼 고정으로 회복하고, 다시 장착한 캐릭터의 공격력을 <color=#f29e38ff><unbreak>#2[i]%</unbreak></color> 증가시킨다, 지속 시간: <unbreak>#4[i]</unbreak>턴",
       "Level": {
         "1": {
           "ParamList": [
@@ -33331,7 +33578,7 @@
     "BaseType": "Rogue",
     "Refinements": {
       "Name": "적원엽병",
-      "Desc": "장착한 캐릭터의 치명타 확률이 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> 증가한다. 전투 진입 시 아군의 전투 스킬 포인트 최대치가 <unbreak>#2[i]</unbreak>pt 이상일 경우, 장착한 캐릭터의 공격력이 <color=#f29e38ff><unbreak>#3[i]%</unbreak></color> 증가한다. 장착한 캐릭터가 전투 스킬을 발동할 때마다 장착한 캐릭터의 공격력을 <color=#f29e38ff><unbreak>#4[i]%</unbreak></color> 증가시킨다, 최대 중첩수: <unbreak>#5[i]</unbreak>회",
+      "Desc": "장착한 캐릭터의 치명타 확률이 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> 증가한다. 전투 진입 시 아군의 전투 스킬 포인트 최대치가 <unbreak>#2[i]</unbreak>pt 이상일 경우, 장착한 캐릭터의 공격력이 <color=#f29e38ff><unbreak>#3[i]%</unbreak></color> 증가한다. 장착한 캐릭터가 전투 스킬을 발동할 때마다 장착한 캐릭터의 공격력이 <color=#f29e38ff><unbreak>#4[i]%</unbreak></color> 증가한다, 최대 중첩수: <unbreak>#5[i]</unbreak>회",
       "Level": {
         "1": {
           "ParamList": [
@@ -33578,6 +33825,530 @@
         "BaseAttackAdd": 3.9600000008940697,
         "BaseDefence": 244.80000000074506,
         "BaseDefenceAdd": 3.6000000005587935
+      }
+    ]
+  },
+  "23047": {
+    "Name": "바다는 왜 노래하는가",
+    "Desc": "파도가 몰아치고, 그 울림이 하늘 끝까지 울려 퍼진다.\\n물고기는 텅 빈 바다를 유영하고, 과거의 거품은 출렁거린다. 한 곡의 선율이 여전히 메아리치는 듯하다.\\n\\n<i>「존귀한 공주님, 저희와 함께 연회를 즐기시죠!」</i>\\n심해의 부름에 응답하기 위해, 그녀는 성대한 무대 위에 혼자 남을 때까지 검은 물결과 함께 춤췄다.\\n\\n<i>「바다의 검객이여, 어째서 침묵하고, 무엇을 위해 노래하시나요?」</i>\\n그녀는 대지를 딛는 매 순간 고통을 견뎠다. 그녀는 좀처럼 노래하지 않고, 오직 그 핏빛의 검날로 생명의 비명을 연주할 뿐이었다.\\n\\n<i>「글래디오럼 경, 나와 함께 별바다를 정복하자!」</i>\\n그 뜨거운 불빛을 발견했을 때 그녀는 그것이 연회의 시작이라 믿었고, 마침내 연주의 활을 들었다.\\n\\n……\\n\\n<i>「헬렉트라... 헬렉트라… 노래가 끝난 지금, 어디로 향해야 할까?」</i>\\n\\n헛된 희망이 부서질 때마다 그녀는 늘 고독한 선율로 사람들의 질문에 답했지만, 그 소리는 듣는 이를 매혹시킬 뿐이었다——\\n\\n어쩌면… 인간 세상이든 깊은 바다든, 진정으로 들을 수 있는 자는 연주자 자신뿐일지도 모른다",
+    "Rarity": "CombatPowerLightconeRarity5",
+    "BaseType": "Warlock",
+    "Refinements": {
+      "Name": "독주",
+      "Desc": "장착한 캐릭터의 효과 명중이 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> 증가하고, 장착한 캐릭터가 부여한 디버프 상태에 빠진 적이 있을 시 대상을 <unbreak>#2[i]%</unbreak>의 기본 확률로 [혼미] 상태에 빠트린다, 지속 시간: <unbreak>#3[i]</unbreak>턴, 같은 유형의 효과는 중첩되지 않는다. [혼미] 상태일 때 장착한 캐릭터가 부여한 디버프 상태 1개당 받는 지속 피해가 <color=#f29e38ff><unbreak>#4[f1]%</unbreak></color> 증가한다, 해당 효과 최대 중첩수: <unbreak>#5[i]</unbreak>스택, 아군의 공격을 받을 시 공격자의 속도가 <color=#f29e38ff><unbreak>#6[f1]%</unbreak></color> 증가한다, 지속 시간: <unbreak>#7[i]</unbreak>턴",
+      "Level": {
+        "1": {
+          "ParamList": [
+            0.40000000037252903,
+            0.8000000007450581,
+            3,
+            0.05000000004656613,
+            6,
+            0.10000000009313226,
+            3
+          ]
+        },
+        "2": {
+          "ParamList": [
+            0.45000000041909516,
+            0.8000000007450581,
+            3,
+            0.06250000023283064,
+            6,
+            0.12499999976716936,
+            3
+          ]
+        },
+        "3": {
+          "ParamList": [
+            0.5000000004656613,
+            0.8000000007450581,
+            3,
+            0.07499999972060323,
+            6,
+            0.1500000001396984,
+            3
+          ]
+        },
+        "4": {
+          "ParamList": [
+            0.5500000005122274,
+            0.8000000007450581,
+            3,
+            0.08749999990686774,
+            6,
+            0.17499999981373549,
+            3
+          ]
+        },
+        "5": {
+          "ParamList": [
+            0.6000000005587935,
+            0.8000000007450581,
+            3,
+            0.10000000009313226,
+            6,
+            0.20000000018626451,
+            3
+          ]
+        }
+      }
+    },
+    "Stats": [
+      {
+        "EquipmentID": 23047,
+        "PromotionCostList": [
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 2,
+            "ItemNum": 5000,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 115001,
+            "ItemNum": 8,
+            "Rarity": "NotNormal"
+          }
+        ],
+        "PlayerLevelRequire": 15,
+        "MaxLevel": 20,
+        "BaseHP": 43.200000000186265,
+        "BaseHPAdd": 6.480000000447035,
+        "BaseAttack": 28.800000000745058,
+        "BaseAttackAdd": 4.320000000298023,
+        "BaseDefence": 21,
+        "BaseDefenceAdd": 3.1500000001396984
+      },
+      {
+        "EquipmentID": 23047,
+        "Promotion": 1,
+        "PromotionCostList": [
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 2,
+            "ItemNum": 10000,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 110221,
+            "ItemNum": 4,
+            "Rarity": "NotNormal"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 115001,
+            "ItemNum": 12,
+            "Rarity": "NotNormal"
+          }
+        ],
+        "WorldLevelRequire": 1,
+        "MaxLevel": 30,
+        "BaseHP": 95.04000000003725,
+        "BaseHPAdd": 6.480000000447035,
+        "BaseAttack": 63.360000000335276,
+        "BaseAttackAdd": 4.320000000298023,
+        "BaseDefence": 46.200000000186265,
+        "BaseDefenceAdd": 3.1500000001396984
+      },
+      {
+        "EquipmentID": 23047,
+        "Promotion": 2,
+        "PromotionCostList": [
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 2,
+            "ItemNum": 20000,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 110222,
+            "ItemNum": 4,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 115002,
+            "ItemNum": 8,
+            "Rarity": "Rare"
+          }
+        ],
+        "WorldLevelRequire": 2,
+        "MaxLevel": 40,
+        "BaseHP": 164.160000000149,
+        "BaseHPAdd": 6.480000000447035,
+        "BaseAttack": 109.44000000040978,
+        "BaseAttackAdd": 4.320000000298023,
+        "BaseDefence": 79.80000000074506,
+        "BaseDefenceAdd": 3.1500000001396984
+      },
+      {
+        "EquipmentID": 23047,
+        "Promotion": 3,
+        "PromotionCostList": [
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 2,
+            "ItemNum": 50000,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 110222,
+            "ItemNum": 8,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 115002,
+            "ItemNum": 12,
+            "Rarity": "Rare"
+          }
+        ],
+        "WorldLevelRequire": 3,
+        "MaxLevel": 50,
+        "BaseHP": 233.28000000026077,
+        "BaseHPAdd": 6.480000000447035,
+        "BaseAttack": 155.5200000004843,
+        "BaseAttackAdd": 4.320000000298023,
+        "BaseDefence": 113.40000000037253,
+        "BaseDefenceAdd": 3.1500000001396984
+      },
+      {
+        "EquipmentID": 23047,
+        "Promotion": 4,
+        "PromotionCostList": [
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 2,
+            "ItemNum": 100000,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 110223,
+            "ItemNum": 5,
+            "Rarity": "VeryRare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 115003,
+            "ItemNum": 6,
+            "Rarity": "VeryRare"
+          }
+        ],
+        "WorldLevelRequire": 4,
+        "MaxLevel": 60,
+        "BaseHP": 302.40000000037253,
+        "BaseHPAdd": 6.480000000447035,
+        "BaseAttack": 201.6000000005588,
+        "BaseAttackAdd": 4.320000000298023,
+        "BaseDefence": 147,
+        "BaseDefenceAdd": 3.1500000001396984
+      },
+      {
+        "EquipmentID": 23047,
+        "Promotion": 5,
+        "PromotionCostList": [
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 2,
+            "ItemNum": 200000,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 110223,
+            "ItemNum": 10,
+            "Rarity": "VeryRare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 115003,
+            "ItemNum": 8,
+            "Rarity": "VeryRare"
+          }
+        ],
+        "WorldLevelRequire": 5,
+        "MaxLevel": 70,
+        "BaseHP": 371.5200000004843,
+        "BaseHPAdd": 6.480000000447035,
+        "BaseAttack": 247.6800000006333,
+        "BaseAttackAdd": 4.320000000298023,
+        "BaseDefence": 180.6000000005588,
+        "BaseDefenceAdd": 3.1500000001396984
+      },
+      {
+        "EquipmentID": 23047,
+        "Promotion": 6,
+        "PromotionCostList": [],
+        "WorldLevelRequire": 5,
+        "MaxLevel": 80,
+        "BaseHP": 440.64000000059605,
+        "BaseHPAdd": 6.480000000447035,
+        "BaseAttack": 293.7600000007078,
+        "BaseAttackAdd": 4.320000000298023,
+        "BaseDefence": 214.20000000018626,
+        "BaseDefenceAdd": 3.1500000001396984
+      }
+    ]
+  },
+  "23048": {
+    "Name": "황금 피가 새긴 시대",
+    "Desc": "<i>「천 년 후, 역사는 케리드라를 어떻게 기억할까?」</i>\\n누군가 그녀에게 이렇게 물은 적이 있다.\\n\\n어떤 이들의 마음속에서 그녀는 위명을 떨친 「카이사르」였다.\\n차갑고 잔혹한 폭군, 야망을 품은 「화염의 왕관」, 그리고 피와 불로 구시대를 태운 여황……\\n\\n어떤 이들은 그녀가 가여운 한낱 「체스 말」에 불과하다고 반박했다.\\n모두에게 버림받은 왕은 결국 야망의 포로였으며, 신과의 대국에서 그녀는 모든 것을 잃을 수밖에 없는 운명이었다고.\\n\\n또 어떤 이들은 말했다. 바다보다 어두운 마음 깊은 곳에서, 그녀는 다만 「케리드라」라는 이름의 평범한 인간이었노라고——\\n그녀 역시 희생된 동료를 애도했고, 무거운 사명 앞에서 두려움에 떨며 망설였다고……\\n\\n<i>「훗, 역사가 나를 기억할 필요 없다……」</i>\\n\\n그녀는 가슴 깊이의 쓰라림을 삼키고, 희생으로 포장된 불 쫓는 길을 계속 걸어갔다——\\n\\n<i>「우리의 타오르는 황금 피가 그것을 새겼노라!」</i>",
+    "Rarity": "CombatPowerLightconeRarity5",
+    "BaseType": "Shaman",
+    "Refinements": {
+      "Name": "정벌",
+      "Desc": "장착한 캐릭터의 공격력이 <color=#f29e38ff><unbreak>#1[i]%</unbreak></color> 증가한다. 필살기를 발동해 공격하면 전투 스킬 포인트를 <unbreak>#3[i]</unbreak>pt 회복하며, 장착한 캐릭터가 단일 아군 캐릭터에게 전투 스킬 발동 후 목표가 가하는 전투 스킬 피해가 <color=#f29e38ff><unbreak>#4[f1]%</unbreak></color> 증가한다, 지속 시간: <unbreak>#5[i]</unbreak>턴",
+      "Level": {
+        "1": {
+          "ParamList": [
+            0.6400000005960464,
+            1,
+            1,
+            0.5400000005029142,
+            3
+          ]
+        },
+        "2": {
+          "ParamList": [
+            0.8000000007450581,
+            1,
+            1,
+            0.6750000002793968,
+            3
+          ]
+        },
+        "3": {
+          "ParamList": [
+            0.9600000008940697,
+            1,
+            1,
+            0.8100000007543713,
+            3
+          ]
+        },
+        "4": {
+          "ParamList": [
+            1.1200000001117587,
+            1,
+            1,
+            0.9450000005308539,
+            3
+          ]
+        },
+        "5": {
+          "ParamList": [
+            1.2800000002607703,
+            1,
+            1,
+            1.0800000000745058,
+            3
+          ]
+        }
+      }
+    },
+    "Stats": [
+      {
+        "EquipmentID": 23048,
+        "PromotionCostList": [
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 2,
+            "ItemNum": 5000,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 115011,
+            "ItemNum": 8,
+            "Rarity": "NotNormal"
+          }
+        ],
+        "PlayerLevelRequire": 15,
+        "MaxLevel": 20,
+        "BaseHP": 43.200000000186265,
+        "BaseHPAdd": 6.480000000447035,
+        "BaseAttack": 28.800000000745058,
+        "BaseAttackAdd": 4.320000000298023,
+        "BaseDefence": 21,
+        "BaseDefenceAdd": 3.1500000001396984
+      },
+      {
+        "EquipmentID": 23048,
+        "Promotion": 1,
+        "PromotionCostList": [
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 2,
+            "ItemNum": 10000,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 110231,
+            "ItemNum": 4,
+            "Rarity": "NotNormal"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 115011,
+            "ItemNum": 12,
+            "Rarity": "NotNormal"
+          }
+        ],
+        "WorldLevelRequire": 1,
+        "MaxLevel": 30,
+        "BaseHP": 95.04000000003725,
+        "BaseHPAdd": 6.480000000447035,
+        "BaseAttack": 63.360000000335276,
+        "BaseAttackAdd": 4.320000000298023,
+        "BaseDefence": 46.200000000186265,
+        "BaseDefenceAdd": 3.1500000001396984
+      },
+      {
+        "EquipmentID": 23048,
+        "Promotion": 2,
+        "PromotionCostList": [
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 2,
+            "ItemNum": 20000,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 110232,
+            "ItemNum": 4,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 115012,
+            "ItemNum": 8,
+            "Rarity": "Rare"
+          }
+        ],
+        "WorldLevelRequire": 2,
+        "MaxLevel": 40,
+        "BaseHP": 164.160000000149,
+        "BaseHPAdd": 6.480000000447035,
+        "BaseAttack": 109.44000000040978,
+        "BaseAttackAdd": 4.320000000298023,
+        "BaseDefence": 79.80000000074506,
+        "BaseDefenceAdd": 3.1500000001396984
+      },
+      {
+        "EquipmentID": 23048,
+        "Promotion": 3,
+        "PromotionCostList": [
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 2,
+            "ItemNum": 50000,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 110232,
+            "ItemNum": 8,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 115012,
+            "ItemNum": 12,
+            "Rarity": "Rare"
+          }
+        ],
+        "WorldLevelRequire": 3,
+        "MaxLevel": 50,
+        "BaseHP": 233.28000000026077,
+        "BaseHPAdd": 6.480000000447035,
+        "BaseAttack": 155.5200000004843,
+        "BaseAttackAdd": 4.320000000298023,
+        "BaseDefence": 113.40000000037253,
+        "BaseDefenceAdd": 3.1500000001396984
+      },
+      {
+        "EquipmentID": 23048,
+        "Promotion": 4,
+        "PromotionCostList": [
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 2,
+            "ItemNum": 100000,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 110233,
+            "ItemNum": 5,
+            "Rarity": "VeryRare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 115013,
+            "ItemNum": 6,
+            "Rarity": "VeryRare"
+          }
+        ],
+        "WorldLevelRequire": 4,
+        "MaxLevel": 60,
+        "BaseHP": 302.40000000037253,
+        "BaseHPAdd": 6.480000000447035,
+        "BaseAttack": 201.6000000005588,
+        "BaseAttackAdd": 4.320000000298023,
+        "BaseDefence": 147,
+        "BaseDefenceAdd": 3.1500000001396984
+      },
+      {
+        "EquipmentID": 23048,
+        "Promotion": 5,
+        "PromotionCostList": [
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 2,
+            "ItemNum": 200000,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 110233,
+            "ItemNum": 10,
+            "Rarity": "VeryRare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 115013,
+            "ItemNum": 8,
+            "Rarity": "VeryRare"
+          }
+        ],
+        "WorldLevelRequire": 5,
+        "MaxLevel": 70,
+        "BaseHP": 371.5200000004843,
+        "BaseHPAdd": 6.480000000447035,
+        "BaseAttack": 247.6800000006333,
+        "BaseAttackAdd": 4.320000000298023,
+        "BaseDefence": 180.6000000005588,
+        "BaseDefenceAdd": 3.1500000001396984
+      },
+      {
+        "EquipmentID": 23048,
+        "Promotion": 6,
+        "PromotionCostList": [],
+        "WorldLevelRequire": 5,
+        "MaxLevel": 80,
+        "BaseHP": 440.64000000059605,
+        "BaseHPAdd": 6.480000000447035,
+        "BaseAttack": 293.7600000007078,
+        "BaseAttackAdd": 4.320000000298023,
+        "BaseDefence": 214.20000000018626,
+        "BaseDefenceAdd": 3.1500000001396984
       }
     ]
   },

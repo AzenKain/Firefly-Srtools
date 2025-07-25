@@ -1,4 +1,5 @@
 import { create } from 'zustand'
+import cloneDeep from 'lodash/cloneDeep'
 
 interface RelicMakerState {
     selectedRelicSlot: string;
@@ -29,7 +30,7 @@ interface RelicMakerState {
 
 }
 
-const useRelicMakerStore = create<RelicMakerState>((set, get) => ({
+const useRelicMakerStore = create<RelicMakerState>((set) => ({
     selectedRelicSlot: "",
     selectedMainStat: "",
     selectedRelicSet: "",
@@ -184,14 +185,14 @@ const useRelicMakerStore = create<RelicMakerState>((set, get) => ({
         return {}
     }),
     popHistory: (index: number) => set((state) => {
-        const newPreSelectedSubStats = { ...state.preSelectedSubStats };
+        const newPreSelectedSubStats = cloneDeep(state.preSelectedSubStats);
         const copied = state.preSelectedSubStats[index].map(item => ({ ...item }));
         copied.pop();
         newPreSelectedSubStats[index] = copied;
         return { preSelectedSubStats: newPreSelectedSubStats };
     }),
     addHistory: (index, affix) => set((state) => {
-        const newPreSelectedSubStats = { ...state.preSelectedSubStats };
+        const newPreSelectedSubStats = cloneDeep(state.preSelectedSubStats);
 
         const currentList = state.preSelectedSubStats[index];
         const copied = currentList ? currentList.map(item => ({ ...item })) : [
@@ -202,7 +203,7 @@ const useRelicMakerStore = create<RelicMakerState>((set, get) => ({
         ];
 
         if (copied) {
-            const newAffix = { ...affix };
+            const newAffix = cloneDeep(affix);
             copied.push(newAffix);
             newPreSelectedSubStats[index] = copied;
             return { preSelectedSubStats: newPreSelectedSubStats };

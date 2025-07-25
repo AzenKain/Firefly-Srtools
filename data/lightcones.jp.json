@@ -18210,7 +18210,7 @@
     "Rarity": "CombatPowerLightconeRarity4",
     "BaseType": "Knight",
     "Refinements": {
-      "Name": "甘い夢",
+      "Name": "{RUBY_B#あま}甘{RUBY_E#}い{RUBY_B#ゆめ}夢{RUBY_E#}",
       "Desc": "装備キャラが付与するバリアの耐久値+<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。味方がバリアを持つ時、与ダメージ+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
       "Level": {
         "1": {
@@ -18452,7 +18452,7 @@
     "Rarity": "CombatPowerLightconeRarity4",
     "BaseType": "Memory",
     "Refinements": {
-      "Name": "綴る",
+      "Name": "{RUBY_B#つづ}綴{RUBY_E#}る",
       "Desc": "装備キャラの最大HP+<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。装備キャラの記憶の精霊が攻撃した後、装備キャラおよびその記憶の精霊の治癒量+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>、<unbreak>#3[i]</unbreak>ターン継続。",
       "Level": {
         "1": {
@@ -18699,7 +18699,7 @@
     "Rarity": "CombatPowerLightconeRarity4",
     "BaseType": "Priest",
     "Refinements": {
-      "Name": "別れ",
+      "Name": "{RUBY_B#わか}別{RUBY_E#}れ",
       "Desc": "装備キャラの治癒量+<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。味方の残りHPが<unbreak>#2[i]%</unbreak>以上の場合、与ダメージ+<color=#f29e38ff><unbreak>#3[i]%</unbreak></color>。",
       "Level": {
         "1": {
@@ -19183,7 +19183,7 @@
     "Rarity": "CombatPowerLightconeRarity4",
     "BaseType": "Memory",
     "Refinements": {
-      "Name": "一蓮托生",
+      "Name": "{RUBY_B#いちれんたくしょう}一蓮托生{RUBY_E#}",
       "Desc": "装備キャラの会心ダメージ+<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。さらに装備キャラの記憶の精霊の会心ダメージ+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
       "Level": {
         "1": {
@@ -19425,8 +19425,8 @@
     "Rarity": "CombatPowerLightconeRarity4",
     "BaseType": "Warrior",
     "Refinements": {
-      "Name": "殺し合い",
-      "Desc": "装備キャラの会心率+<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。装備キャラによる戦闘スキルダメージと必殺技ダメージ+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
+      "Name": "{RUBY_B#ころ}殺{RUBY_E#}し{RUBY_B#あ}合{RUBY_E#}い",
+      "Desc": "装備キャラの会心率+<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。装備キャラの戦闘スキルダメージと必殺技ダメージ+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
       "Level": {
         "1": {
           "ParamList": [
@@ -19667,8 +19667,8 @@
     "Rarity": "CombatPowerLightconeRarity4",
     "BaseType": "Mage",
     "Refinements": {
-      "Name": "憧れ",
-      "Desc": "装備キャラの会心率+<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。装備キャラによる必殺技ダメージと追加攻撃ダメージ+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
+      "Name": "{RUBY_B#あこが}憧{RUBY_E#}れ",
+      "Desc": "装備キャラの会心率+<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。装備キャラの必殺技ダメージと追加攻撃ダメージ+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
       "Level": {
         "1": {
           "ParamList": [
@@ -19905,11 +19905,11 @@
   },
   "21061": {
     "Name": "{RUBY_B#きゅうじつ}休日{RUBY_E#}のバルネア{RUBY_B#だいぼうけん}大冒険{RUBY_E#}",
-    "Desc": "<i>「ヒアンシーちゃん、一緒に新ちくオープンちたバルネアに行ってみない？」</i>\\n\\n少女はオクヘイマでの診療を終えた後、好奇心旺盛な子供のように次々とピュエロスを試して回った。\\n\\n<i>「フルーツジュースのマッサージ、試ちてみる？」</i>\\n真っ赤に染まった両手を見た少女は、イカルンを抱きしめながら後ずさった――\\n<i>「わたしはやっぱり…飲むほうが好きですね……」</i>\\n\\n<i>「大地獣の背中ふみふみマッサージ、割引中だよ！」</i>\\n大地獣は頭を下げ、その鼻息で少女の髪を揺らした。\\n<i>「ま…また今度にします！」</i>\\n\\n<i>「薬草のピュエロスなので健康に良いですよ。何名様でご利用になられますか？」</i>\\n香ばしい薬草の匂いを嗅ぎながら、少女はゆっくりと中に入ってみた。\\n<i>「あ…すごく健康に良さそうです……」</i>\\n\\n<i>「ドゥ、ドゥドゥ！」</i>\\nイカルンも嬉しそうに泳いでいる。\\n<i>「ここ数日でかなり疲れが溜まってたみたいですね……」</i>\\n\\nこの貴重な休日に、少女はブドウジュースを飲みながら、赤毛の女の子と「ぐっすり眠るコツ」や、「スイーツ作りの秘訣」などを思う存分話し合った。\\n\\n<i>「大変、イ…イカルン！」</i>\\nその時、少女の叫び声がバルネアの静寂を破った。\\n\\n<i>「ドゥ……」\\n「イカルン、しっかり！」</i>",
+    "Desc": "<i>「ヒアンシーちゃん、一緒に新ちくオープンちたバルネアに行ってみない？」</i>\\n\\n少女はオクヘイマでの診療を終えた後、好奇心旺盛な子供のように次々とピュエロスを試して回った。\\n\\n<i>「フルーツジュースのマッサージ、試ちてみる？」</i>\\n真っ赤に染まった両手を見た少女は、イカルンを抱きしめながら後ずさった――\\n<i>「わたしはやっぱり…飲むほうが好きですね……」</i>\\n\\n<i>「大地獣の背中ふみふみマッサージ、割引中だよ！」</i>\\n大地獣は頭を下げ、その鼻息で少女の髪を揺らした。\\n<i>「ま…また今度にします！」</i>\\n\\n<i>「薬草のピュエロスなので健康に良いですよ。何名様でご利用になられますか？」</i>\\n香ばしい薬草の匂いを嗅ぎながら、少女はゆっくりと中に入ってみた。\\n<i>「あ…すごく健康に良さそうです……」</i>\\n\\n<i>「ブル、プー！」</i>\\nイカルンも嬉しそうに泳いでいる。\\n<i>「ここ数日でかなり疲れが溜まってたみたいですね……」</i>\\n\\nこの貴重な休日に、少女はブドウジュースを飲みながら、赤毛の女の子と「ぐっすり眠るコツ」や、「スイーツ作りの秘訣」などを思う存分話し合った。\\n\\n<i>「大変、イ…イカルン！」</i>\\nその時、少女の叫び声がバルネアの静寂を破った。\\n\\n<i>「ブルル……」\\n「イカルン、しっかり！」</i>",
     "Rarity": "CombatPowerLightconeRarity4",
     "BaseType": "Warlock",
     "Refinements": {
-      "Name": "落ち着く",
+      "Name": "{RUBY_B#お}落{RUBY_E#}ち{RUBY_B#つ}着{RUBY_E#}く",
       "Desc": "装備キャラの与ダメージ+<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。装備キャラが攻撃を行った後、<unbreak>#2[i]%</unbreak>の基礎確率で攻撃を受けた敵を被ダメージアップ状態にする。状態中、敵の受けるダメージ+<color=#f29e38ff><unbreak>#3[i]%</unbreak></color>、<unbreak>#4[i]</unbreak>ターン継続。同系統のスキルは累積できない。",
       "Level": {
         "1": {
@@ -20161,8 +20161,8 @@
     "Rarity": "CombatPowerLightconeRarity4",
     "BaseType": "Rogue",
     "Refinements": {
-      "Name": "執着",
-      "Desc": "装備キャラの会心ダメージ+<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。装備キャラによる戦闘スキルダメージと追加攻撃ダメージ+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
+      "Name": "{RUBY_B#しゅうじゃく}執着{RUBY_E#}",
+      "Desc": "装備キャラの会心ダメージ+<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。装備キャラの戦闘スキルダメージと追加攻撃ダメージ+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>。",
       "Level": {
         "1": {
           "ParamList": [
@@ -21609,6 +21609,253 @@
       },
       {
         "EquipmentID": 22004,
+        "Promotion": 6,
+        "PromotionCostList": [],
+        "WorldLevelRequire": 5,
+        "MaxLevel": 80,
+        "BaseHP": 440.64000000059605,
+        "BaseHPAdd": 6.480000000447035,
+        "BaseAttack": 220.32000000029802,
+        "BaseAttackAdd": 3.2400000002235174,
+        "BaseDefence": 153,
+        "BaseDefenceAdd": 2.2500000002328306
+      }
+    ]
+  },
+  "22005": {
+    "Name": "永遠の迷境ごはん",
+    "Desc": "ゴロゴロ——\\n迷境の外で嵐が荒れ狂っている。\\nグツグツ——\\n妖精たちの不思議な大鍋が音を立てて煮えたぎる。\\n\\n<i>「特製スパイスを振って……」</i>\\n<i>「新鮮な野菜を投入！」</i>\\n<i>「今回こそ、きっと成功するはず！」</i>\\n\\n大鍋が再びグツグツと音を立て、妖精たちは目を輝かせながらそれを見守る。\\n<i>「くるぞ…きたーっ！」</i>\\n大鍋の底から、まばゆい光が溢れ出した——\\n\\nその瞬間、鍋のまわりにみんなが集まってくる！\\n\\n……\\n\\nいい匂いが漂う宴の席で、来客たちは杯を掲げ、この不思議なひと時を祝福する——\\n\\n願わくば、この夢の楽園がいつまでも温もりに満ち、いつまでも笑顔で溢れますように！",
+    "Rarity": "CombatPowerLightconeRarity4",
+    "BaseType": "Shaman",
+    "Refinements": {
+      "Name": "いい匂い！",
+      "Desc": "装備キャラの攻撃力+<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。装備キャラが戦闘スキルを発動した後、攻撃力+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>、この効果は最大で<unbreak>#3[i]</unbreak>層累積できる。",
+      "Level": {
+        "1": {
+          "ParamList": [
+            0.1600000001490116,
+            0.0800000000745058,
+            3
+          ]
+        },
+        "2": {
+          "ParamList": [
+            0.20000000018626451,
+            0.10000000009313226,
+            3
+          ]
+        },
+        "3": {
+          "ParamList": [
+            0.24000000022351742,
+            0.12000000011175871,
+            3
+          ]
+        },
+        "4": {
+          "ParamList": [
+            0.2800000002607703,
+            0.14000000013038516,
+            3
+          ]
+        },
+        "5": {
+          "ParamList": [
+            0.3200000002980232,
+            0.1600000001490116,
+            3
+          ]
+        }
+      }
+    },
+    "Stats": [
+      {
+        "EquipmentID": 22005,
+        "PromotionCostList": [
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 2,
+            "ItemNum": 4000,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 115001,
+            "ItemNum": 5,
+            "Rarity": "NotNormal"
+          }
+        ],
+        "PlayerLevelRequire": 15,
+        "MaxLevel": 20,
+        "BaseHP": 43.200000000186265,
+        "BaseHPAdd": 6.480000000447035,
+        "BaseAttack": 21.600000000558794,
+        "BaseAttackAdd": 3.2400000002235174,
+        "BaseDefence": 15,
+        "BaseDefenceAdd": 2.2500000002328306
+      },
+      {
+        "EquipmentID": 22005,
+        "Promotion": 1,
+        "PromotionCostList": [
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 2,
+            "ItemNum": 8000,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 110231,
+            "ItemNum": 3,
+            "Rarity": "NotNormal"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 115001,
+            "ItemNum": 10,
+            "Rarity": "NotNormal"
+          }
+        ],
+        "WorldLevelRequire": 1,
+        "MaxLevel": 30,
+        "BaseHP": 95.04000000003725,
+        "BaseHPAdd": 6.480000000447035,
+        "BaseAttack": 47.52000000048429,
+        "BaseAttackAdd": 3.2400000002235174,
+        "BaseDefence": 33,
+        "BaseDefenceAdd": 2.2500000002328306
+      },
+      {
+        "EquipmentID": 22005,
+        "Promotion": 2,
+        "PromotionCostList": [
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 2,
+            "ItemNum": 16000,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 110232,
+            "ItemNum": 3,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 115002,
+            "ItemNum": 6,
+            "Rarity": "Rare"
+          }
+        ],
+        "WorldLevelRequire": 2,
+        "MaxLevel": 40,
+        "BaseHP": 164.160000000149,
+        "BaseHPAdd": 6.480000000447035,
+        "BaseAttack": 82.0800000000745,
+        "BaseAttackAdd": 3.2400000002235174,
+        "BaseDefence": 57,
+        "BaseDefenceAdd": 2.2500000002328306
+      },
+      {
+        "EquipmentID": 22005,
+        "Promotion": 3,
+        "PromotionCostList": [
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 2,
+            "ItemNum": 40000,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 110232,
+            "ItemNum": 6,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 115002,
+            "ItemNum": 9,
+            "Rarity": "Rare"
+          }
+        ],
+        "WorldLevelRequire": 3,
+        "MaxLevel": 50,
+        "BaseHP": 233.28000000026077,
+        "BaseHPAdd": 6.480000000447035,
+        "BaseAttack": 116.64000000059605,
+        "BaseAttackAdd": 3.2400000002235174,
+        "BaseDefence": 81,
+        "BaseDefenceAdd": 2.2500000002328306
+      },
+      {
+        "EquipmentID": 22005,
+        "Promotion": 4,
+        "PromotionCostList": [
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 2,
+            "ItemNum": 80000,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 110233,
+            "ItemNum": 4,
+            "Rarity": "VeryRare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 115003,
+            "ItemNum": 5,
+            "Rarity": "VeryRare"
+          }
+        ],
+        "WorldLevelRequire": 4,
+        "MaxLevel": 60,
+        "BaseHP": 302.40000000037253,
+        "BaseHPAdd": 6.480000000447035,
+        "BaseAttack": 151.20000000018626,
+        "BaseAttackAdd": 3.2400000002235174,
+        "BaseDefence": 105,
+        "BaseDefenceAdd": 2.2500000002328306
+      },
+      {
+        "EquipmentID": 22005,
+        "Promotion": 5,
+        "PromotionCostList": [
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 2,
+            "ItemNum": 160000,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 110233,
+            "ItemNum": 8,
+            "Rarity": "VeryRare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 115003,
+            "ItemNum": 7,
+            "Rarity": "VeryRare"
+          }
+        ],
+        "WorldLevelRequire": 5,
+        "MaxLevel": 70,
+        "BaseHP": 371.5200000004843,
+        "BaseHPAdd": 6.480000000447035,
+        "BaseAttack": 185.7600000007078,
+        "BaseAttackAdd": 3.2400000002235174,
+        "BaseDefence": 129,
+        "BaseDefenceAdd": 2.2500000002328306
+      },
+      {
+        "EquipmentID": 22005,
         "Promotion": 6,
         "PromotionCostList": [],
         "WorldLevelRequire": 5,
@@ -32288,12 +32535,12 @@
   },
   "23042": {
     "Name": "{RUBY_B#そら}空{RUBY_E#}の{RUBY_B#にじ}虹{RUBY_E#}が{RUBY_B#き}消{RUBY_E#}えぬように",
-    "Desc": "<i>「感情が雲なら、私たちはそれを背負う空のようなものです。空が曇っていれば気持ちも不安定になります」</i>\\n医者は訪ねてきた者の苦痛に耳を傾け、癒しの囁きを与える。\\n<i>「目を閉じて、ゆっくりと息を吸って…自分が暖かく柔らかい場所にいる想像をしてください」</i>\\n\\nその言葉には魔力が宿っているようで、翼獣の翼の下に虹色の光が降り注ぐ。\\n<i>「野原からふくそよ風が花の香りを運び、漂うしっとりした雲は陽の光に満ち溢れている……」</i>\\n訪問者は徐々に美しき夢に包まれ、落ち着いた呼吸音だけが返ってくる。\\n\\n最後の患者を診療した後、医者はそっと病室のドアを閉めた。\\n\\n遠くではまだ果てしない永夜が渦巻き、数え切れないほどの廃墟が傷跡のように大地に残されていく。\\n\\n<i>「来世では、黎明がすべての人々に降り注ぐといいな……」</i>\\n旅立つ前に、彼女は空に向かって願いことをした——\\n<i>「どうか、空に架かる虹が、消えませんように」</i>",
+    "Desc": "<i>「感情が雲なら、わたしたちはそれを背負う空のようなものです。空が曇っていれば気持ちも不安定になります」</i>\\n医者は訪ねてきた者の苦痛に耳を傾け、癒やしの囁きを与える。\\n<i>「目を閉じて、ゆっくりと息を吸って…自分が暖かく柔らかい場所にいる想像をしてください」</i>\\n\\nその言葉には魔力が宿っているようで、翼獣の翼の下に虹色の光が降り注ぐ。\\n<i>「野原から吹くそよ風が花の香りを運び、漂うしっとりした雲は陽の光に満ち溢れている……」</i>\\n訪問者は徐々に美しい夢に包まれ、落ち着いた呼吸音だけが返ってくる。\\n\\n最後の患者を診療した後、医者はそっと病室のドアを閉めた。\\n\\n遠くではまだ果てしない永夜が渦巻き、数え切れないほどの廃墟が傷跡のように大地に残されていく。\\n\\n<i>「来世では、黎明がすべての人々に降り注ぐといいな……」</i>\\n旅立つ前に、彼女は空に向かって願い事をした——\\n<i>「どうか、空に架かる虹が、消えませんように」</i>",
     "Rarity": "CombatPowerLightconeRarity5",
     "BaseType": "Memory",
     "Refinements": {
       "Name": "{RUBY_B#ほうよう}包容{RUBY_E#}",
-      "Desc": "装備キャラの速度+<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。装備キャラが通常攻撃、戦闘スキルまたは必殺技を発動する時、味方それぞれの残りHP<color=#f29e38ff><unbreak>#2[f1]%</unbreak></color>分のHPを消費し、装備キャラの記憶の精霊が次の攻撃を行った後に消費したHP<color=#f29e38ff><unbreak>#6[f1]%</unbreak></color>分の付加ダメージを1回与える。なお、この付加ダメージの属性は装備キャラの記憶の精霊と同じものになる。その後、消費したHPのカウントはクリアされる。装備キャラの記憶の精霊が精霊スキルを発動する時、敵全体の受けるダメージ+<color=#f29e38ff><unbreak>#4[f1]%</unbreak></color>、<unbreak>#5[i]</unbreak>ターン継続。同系統のスキルは累積できない。",
+      "Desc": "装備キャラの速度+<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。装備キャラが通常攻撃、戦闘スキルまたは必殺技を発動する時、味方それぞれが自身の残りHP<color=#f29e38ff><unbreak>#2[f1]%</unbreak></color>分のHPを消費し、装備キャラの記憶の精霊が次の攻撃を行った後に消費したHP<color=#f29e38ff><unbreak>#6[f1]%</unbreak></color>分の付加ダメージを1回与える。なお、この付加ダメージの属性は装備キャラの記憶の精霊と同じものになる。その後、消費したHPのカウントはクリアされる。装備キャラの記憶の精霊が精霊スキルを発動する時、敵全体の受けるダメージ+<color=#f29e38ff><unbreak>#4[f1]%</unbreak></color>、<unbreak>#5[i]</unbreak>ターン継続。同系統のスキルは累積できない。",
       "Level": {
         "1": {
           "ParamList": [
@@ -32821,8 +33068,8 @@
     "Rarity": "CombatPowerLightconeRarity5",
     "BaseType": "Warrior",
     "Refinements": {
-      "Name": "喪失",
-      "Desc": "装備キャラの基礎速度+<color=#f29e38ff><unbreak>#1[i]</unbreak></color>、ダメージを与えた時、敵の防御力を<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>無視する。装備キャラが必殺技を発動した後、「烈日」を獲得する。この効果はターンが回ってきた時に解除される。「烈日」を所持している場合、装備キャラの与ダメージ+<color=#f29e38ff><unbreak>#3[i]%</unbreak></color>。",
+      "Name": "{RUBY_B#そうしつ}喪失{RUBY_E#}",
+      "Desc": "装備キャラの基礎速度+<color=#f29e38ff><unbreak>#1[i]</unbreak></color>、ダメージを与える時、敵の防御力を<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>無視する。装備キャラが必殺技を発動した後、「烈日」を獲得する。この効果はターンが回ってきた時に解除される。「烈日」を所持している場合、装備キャラの与ダメージ+<color=#f29e38ff><unbreak>#3[i]%</unbreak></color>。",
       "Level": {
         "1": {
           "ParamList": [
@@ -33068,8 +33315,8 @@
     "Rarity": "CombatPowerLightconeRarity5",
     "BaseType": "Warrior",
     "Refinements": {
-      "Name": "騎士王",
-      "Desc": "装備キャラの会心ダメージ+<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。必殺技を発動した時、装備キャラの攻撃力+<color=#f29e38ff><unbreak>#6[i]%</unbreak></color>。なお、装備キャラの最大EPが<unbreak>#3[i]</unbreak>以上の場合、固定で最大EPの<unbreak>#5[i]%</unbreak>分回復し、さらに装備キャラの攻撃力+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>、<unbreak>#4[i]</unbreak>ターン継続。",
+      "Name": "{RUBY_B#きしおう}騎士王{RUBY_E#}",
+      "Desc": "装備キャラの会心ダメージ+<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。必殺技を発動する時、装備キャラの攻撃力+<color=#f29e38ff><unbreak>#6[i]%</unbreak></color>、<unbreak>#4[i]</unbreak>ターン継続。なお、装備キャラの最大EPが<unbreak>#3[i]</unbreak>以上の場合、自身の最大EP<unbreak>#5[i]%</unbreak>分のEPを回復し、追加で装備キャラの攻撃力+<color=#f29e38ff><unbreak>#2[i]%</unbreak></color>、<unbreak>#4[i]</unbreak>ターン継続。",
       "Level": {
         "1": {
           "ParamList": [
@@ -33330,7 +33577,7 @@
     "Rarity": "CombatPowerLightconeRarity5",
     "BaseType": "Rogue",
     "Refinements": {
-      "Name": "赤原猟兵",
+      "Name": "{RUBY_B#フルンディング}赤原猟兵{RUBY_E#}",
       "Desc": "装備キャラの会心率+<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。戦闘に入る時、味方の最大SPが<unbreak>#2[i]</unbreak>以上の場合、装備キャラの攻撃力+<color=#f29e38ff><unbreak>#3[i]%</unbreak></color>。装備キャラが戦闘スキルを発動するたびに、装備キャラの攻撃力+<color=#f29e38ff><unbreak>#4[i]%</unbreak></color>、最大<unbreak>#5[i]</unbreak>層まで累積できる。",
       "Level": {
         "1": {
@@ -33578,6 +33825,530 @@
         "BaseAttackAdd": 3.9600000008940697,
         "BaseDefence": 244.80000000074506,
         "BaseDefenceAdd": 3.6000000005587935
+      }
+    ]
+  },
+  "23047": {
+    "Name": "海の歌は何がため",
+    "Desc": "ほとばしる波の咆哮が空をも震わせる。\\n魚は何もない海を回遊する。旧き日の泡が渦巻く中、かつての旋律が今もなおこだまし続けているようだ。\\n\\n<i></i><i>「高貴なる姫様、私たちと一緒に宴を楽しみましょう！」</i>\\n深海からの呼び声に応え、彼女は暗黒の潮と共に舞い踊った——やがて、盛大なる舞台に独り取り残されるその時まで。\\n\\n<i>「海洋の剣士よ、あなたは何故沈黙し、その歌は何がためのものなのか？」</i>\\n大地を歩む彼女は、痛みに耐え続け、ほとんど歌うこともなくなった。もし彼女が奏でる音があるとすれば、それは血に染まった刃が響かせる、命の悲鳴だけだろう。\\n\\n<i>「剣旗卿、僕についてこい。共に星海を征服しようではないか！」</i>\\nその熱い灯火を見つけた時、ついに饗宴が始まるのだと確信し、彼女は琴を手に取った。\\n\\n……\\n\\n<i>「ヘレクトラ…ヘレクトラ…曲は終わった。次はどこへ向かうのだ？」</i>\\n\\n偽りの希望が砕け散るたびに、彼女はいつも同じ孤独に満ちた旋律で人々の詰問に答え、聴く者たちを心酔させた——\\n\\nあるいは…人間の世界でも深海でも、本当にその旋律を聞くことができるのは、奏でる者ただ1人だけなのかもしれない。",
+    "Rarity": "CombatPowerLightconeRarity5",
+    "BaseType": "Warlock",
+    "Refinements": {
+      "Name": "独奏",
+      "Desc": "装備キャラの効果命中+<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。敵が装備キャラによりデバフが付与された時、<unbreak>#2[i]%</unbreak>の基礎確率でその敵を「魂迷」状態にする。<unbreak>#3[i]</unbreak>ターン継続。なお、同系統のスキルは累積できない。「魂迷」状態の敵は、装備キャラが付与したデバフ1つにつき、受ける持続ダメージ+<color=#f29e38ff><unbreak>#4[f1]%</unbreak></color>、この効果は最大で<unbreak>#5[i]</unbreak>層累積できる。味方が「魂迷」状態の敵を攻撃した時、その味方の速度+<color=#f29e38ff><unbreak>#6[f1]%</unbreak></color>、<unbreak>#7[i]</unbreak>ターン継続。",
+      "Level": {
+        "1": {
+          "ParamList": [
+            0.40000000037252903,
+            0.8000000007450581,
+            3,
+            0.05000000004656613,
+            6,
+            0.10000000009313226,
+            3
+          ]
+        },
+        "2": {
+          "ParamList": [
+            0.45000000041909516,
+            0.8000000007450581,
+            3,
+            0.06250000023283064,
+            6,
+            0.12499999976716936,
+            3
+          ]
+        },
+        "3": {
+          "ParamList": [
+            0.5000000004656613,
+            0.8000000007450581,
+            3,
+            0.07499999972060323,
+            6,
+            0.1500000001396984,
+            3
+          ]
+        },
+        "4": {
+          "ParamList": [
+            0.5500000005122274,
+            0.8000000007450581,
+            3,
+            0.08749999990686774,
+            6,
+            0.17499999981373549,
+            3
+          ]
+        },
+        "5": {
+          "ParamList": [
+            0.6000000005587935,
+            0.8000000007450581,
+            3,
+            0.10000000009313226,
+            6,
+            0.20000000018626451,
+            3
+          ]
+        }
+      }
+    },
+    "Stats": [
+      {
+        "EquipmentID": 23047,
+        "PromotionCostList": [
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 2,
+            "ItemNum": 5000,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 115001,
+            "ItemNum": 8,
+            "Rarity": "NotNormal"
+          }
+        ],
+        "PlayerLevelRequire": 15,
+        "MaxLevel": 20,
+        "BaseHP": 43.200000000186265,
+        "BaseHPAdd": 6.480000000447035,
+        "BaseAttack": 28.800000000745058,
+        "BaseAttackAdd": 4.320000000298023,
+        "BaseDefence": 21,
+        "BaseDefenceAdd": 3.1500000001396984
+      },
+      {
+        "EquipmentID": 23047,
+        "Promotion": 1,
+        "PromotionCostList": [
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 2,
+            "ItemNum": 10000,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 110221,
+            "ItemNum": 4,
+            "Rarity": "NotNormal"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 115001,
+            "ItemNum": 12,
+            "Rarity": "NotNormal"
+          }
+        ],
+        "WorldLevelRequire": 1,
+        "MaxLevel": 30,
+        "BaseHP": 95.04000000003725,
+        "BaseHPAdd": 6.480000000447035,
+        "BaseAttack": 63.360000000335276,
+        "BaseAttackAdd": 4.320000000298023,
+        "BaseDefence": 46.200000000186265,
+        "BaseDefenceAdd": 3.1500000001396984
+      },
+      {
+        "EquipmentID": 23047,
+        "Promotion": 2,
+        "PromotionCostList": [
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 2,
+            "ItemNum": 20000,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 110222,
+            "ItemNum": 4,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 115002,
+            "ItemNum": 8,
+            "Rarity": "Rare"
+          }
+        ],
+        "WorldLevelRequire": 2,
+        "MaxLevel": 40,
+        "BaseHP": 164.160000000149,
+        "BaseHPAdd": 6.480000000447035,
+        "BaseAttack": 109.44000000040978,
+        "BaseAttackAdd": 4.320000000298023,
+        "BaseDefence": 79.80000000074506,
+        "BaseDefenceAdd": 3.1500000001396984
+      },
+      {
+        "EquipmentID": 23047,
+        "Promotion": 3,
+        "PromotionCostList": [
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 2,
+            "ItemNum": 50000,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 110222,
+            "ItemNum": 8,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 115002,
+            "ItemNum": 12,
+            "Rarity": "Rare"
+          }
+        ],
+        "WorldLevelRequire": 3,
+        "MaxLevel": 50,
+        "BaseHP": 233.28000000026077,
+        "BaseHPAdd": 6.480000000447035,
+        "BaseAttack": 155.5200000004843,
+        "BaseAttackAdd": 4.320000000298023,
+        "BaseDefence": 113.40000000037253,
+        "BaseDefenceAdd": 3.1500000001396984
+      },
+      {
+        "EquipmentID": 23047,
+        "Promotion": 4,
+        "PromotionCostList": [
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 2,
+            "ItemNum": 100000,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 110223,
+            "ItemNum": 5,
+            "Rarity": "VeryRare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 115003,
+            "ItemNum": 6,
+            "Rarity": "VeryRare"
+          }
+        ],
+        "WorldLevelRequire": 4,
+        "MaxLevel": 60,
+        "BaseHP": 302.40000000037253,
+        "BaseHPAdd": 6.480000000447035,
+        "BaseAttack": 201.6000000005588,
+        "BaseAttackAdd": 4.320000000298023,
+        "BaseDefence": 147,
+        "BaseDefenceAdd": 3.1500000001396984
+      },
+      {
+        "EquipmentID": 23047,
+        "Promotion": 5,
+        "PromotionCostList": [
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 2,
+            "ItemNum": 200000,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 110223,
+            "ItemNum": 10,
+            "Rarity": "VeryRare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 115003,
+            "ItemNum": 8,
+            "Rarity": "VeryRare"
+          }
+        ],
+        "WorldLevelRequire": 5,
+        "MaxLevel": 70,
+        "BaseHP": 371.5200000004843,
+        "BaseHPAdd": 6.480000000447035,
+        "BaseAttack": 247.6800000006333,
+        "BaseAttackAdd": 4.320000000298023,
+        "BaseDefence": 180.6000000005588,
+        "BaseDefenceAdd": 3.1500000001396984
+      },
+      {
+        "EquipmentID": 23047,
+        "Promotion": 6,
+        "PromotionCostList": [],
+        "WorldLevelRequire": 5,
+        "MaxLevel": 80,
+        "BaseHP": 440.64000000059605,
+        "BaseHPAdd": 6.480000000447035,
+        "BaseAttack": 293.7600000007078,
+        "BaseAttackAdd": 4.320000000298023,
+        "BaseDefence": 214.20000000018626,
+        "BaseDefenceAdd": 3.1500000001396984
+      }
+    ]
+  },
+  "23048": {
+    "Name": "黄金の血で刻む時代",
+    "Desc": "<i>「千年後、ケリュドラはどのような姿で歴史に刻まれるのか？」</i>\\n誰かが彼女にそう問いかけた。\\n\\nある者にとって彼女は誰もが知る「カイザー」——\\n冷酷な暴君にして野心に満ちた「炎冠」、血と炎で旧き時代を焼き払った女帝である……\\n\\n一方で、別の者は異を唱える。彼女は哀れな「駒」にすぎないと。\\n裏切られた王は所詮、野望の囚人。神との対局において、敗北は初めから決まっていたのだと。\\n\\nまた、こう語る者もいた。海よりもなお深く暗いその心の奥底では、彼女はただ「ケリュドラ」という名の凡庸な人にすぎないと——\\n犠牲になった仲間を悼み、重すぎる使命の前で怯え、迷い、そして立ちすくむ……\\n\\n<i>「ふっ、歴史に刻まれるだと？」</i>\\n\\n彼女は苦しみを飲み込みながら、仲間たちの犠牲によって敷かれた火を追う旅路を歩み続ける——\\n\\n<i>「逆だ。僕たちの燃える黄金の血が、歴史を刻むのだ！」</i>",
+    "Rarity": "CombatPowerLightconeRarity5",
+    "BaseType": "Shaman",
+    "Refinements": {
+      "Name": "征服",
+      "Desc": "装備キャラの攻撃力+<color=#f29e38ff><unbreak>#1[i]%</unbreak></color>。必殺技を発動して攻撃を行った後、SPを<unbreak>#3[i]</unbreak>回復する。装備キャラが味方単体キャラに戦闘スキルを発動した後、その味方の戦闘スキルダメージ+<color=#f29e38ff><unbreak>#4[f1]%</unbreak></color>、<unbreak>#5[i]</unbreak>ターン継続。",
+      "Level": {
+        "1": {
+          "ParamList": [
+            0.6400000005960464,
+            1,
+            1,
+            0.5400000005029142,
+            3
+          ]
+        },
+        "2": {
+          "ParamList": [
+            0.8000000007450581,
+            1,
+            1,
+            0.6750000002793968,
+            3
+          ]
+        },
+        "3": {
+          "ParamList": [
+            0.9600000008940697,
+            1,
+            1,
+            0.8100000007543713,
+            3
+          ]
+        },
+        "4": {
+          "ParamList": [
+            1.1200000001117587,
+            1,
+            1,
+            0.9450000005308539,
+            3
+          ]
+        },
+        "5": {
+          "ParamList": [
+            1.2800000002607703,
+            1,
+            1,
+            1.0800000000745058,
+            3
+          ]
+        }
+      }
+    },
+    "Stats": [
+      {
+        "EquipmentID": 23048,
+        "PromotionCostList": [
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 2,
+            "ItemNum": 5000,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 115011,
+            "ItemNum": 8,
+            "Rarity": "NotNormal"
+          }
+        ],
+        "PlayerLevelRequire": 15,
+        "MaxLevel": 20,
+        "BaseHP": 43.200000000186265,
+        "BaseHPAdd": 6.480000000447035,
+        "BaseAttack": 28.800000000745058,
+        "BaseAttackAdd": 4.320000000298023,
+        "BaseDefence": 21,
+        "BaseDefenceAdd": 3.1500000001396984
+      },
+      {
+        "EquipmentID": 23048,
+        "Promotion": 1,
+        "PromotionCostList": [
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 2,
+            "ItemNum": 10000,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 110231,
+            "ItemNum": 4,
+            "Rarity": "NotNormal"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 115011,
+            "ItemNum": 12,
+            "Rarity": "NotNormal"
+          }
+        ],
+        "WorldLevelRequire": 1,
+        "MaxLevel": 30,
+        "BaseHP": 95.04000000003725,
+        "BaseHPAdd": 6.480000000447035,
+        "BaseAttack": 63.360000000335276,
+        "BaseAttackAdd": 4.320000000298023,
+        "BaseDefence": 46.200000000186265,
+        "BaseDefenceAdd": 3.1500000001396984
+      },
+      {
+        "EquipmentID": 23048,
+        "Promotion": 2,
+        "PromotionCostList": [
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 2,
+            "ItemNum": 20000,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 110232,
+            "ItemNum": 4,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 115012,
+            "ItemNum": 8,
+            "Rarity": "Rare"
+          }
+        ],
+        "WorldLevelRequire": 2,
+        "MaxLevel": 40,
+        "BaseHP": 164.160000000149,
+        "BaseHPAdd": 6.480000000447035,
+        "BaseAttack": 109.44000000040978,
+        "BaseAttackAdd": 4.320000000298023,
+        "BaseDefence": 79.80000000074506,
+        "BaseDefenceAdd": 3.1500000001396984
+      },
+      {
+        "EquipmentID": 23048,
+        "Promotion": 3,
+        "PromotionCostList": [
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 2,
+            "ItemNum": 50000,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 110232,
+            "ItemNum": 8,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 115012,
+            "ItemNum": 12,
+            "Rarity": "Rare"
+          }
+        ],
+        "WorldLevelRequire": 3,
+        "MaxLevel": 50,
+        "BaseHP": 233.28000000026077,
+        "BaseHPAdd": 6.480000000447035,
+        "BaseAttack": 155.5200000004843,
+        "BaseAttackAdd": 4.320000000298023,
+        "BaseDefence": 113.40000000037253,
+        "BaseDefenceAdd": 3.1500000001396984
+      },
+      {
+        "EquipmentID": 23048,
+        "Promotion": 4,
+        "PromotionCostList": [
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 2,
+            "ItemNum": 100000,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 110233,
+            "ItemNum": 5,
+            "Rarity": "VeryRare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 115013,
+            "ItemNum": 6,
+            "Rarity": "VeryRare"
+          }
+        ],
+        "WorldLevelRequire": 4,
+        "MaxLevel": 60,
+        "BaseHP": 302.40000000037253,
+        "BaseHPAdd": 6.480000000447035,
+        "BaseAttack": 201.6000000005588,
+        "BaseAttackAdd": 4.320000000298023,
+        "BaseDefence": 147,
+        "BaseDefenceAdd": 3.1500000001396984
+      },
+      {
+        "EquipmentID": 23048,
+        "Promotion": 5,
+        "PromotionCostList": [
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 2,
+            "ItemNum": 200000,
+            "Rarity": "Rare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 110233,
+            "ItemNum": 10,
+            "Rarity": "VeryRare"
+          },
+          {
+            "$type": "ItemConfigRow",
+            "ItemID": 115013,
+            "ItemNum": 8,
+            "Rarity": "VeryRare"
+          }
+        ],
+        "WorldLevelRequire": 5,
+        "MaxLevel": 70,
+        "BaseHP": 371.5200000004843,
+        "BaseHPAdd": 6.480000000447035,
+        "BaseAttack": 247.6800000006333,
+        "BaseAttackAdd": 4.320000000298023,
+        "BaseDefence": 180.6000000005588,
+        "BaseDefenceAdd": 3.1500000001396984
+      },
+      {
+        "EquipmentID": 23048,
+        "Promotion": 6,
+        "PromotionCostList": [],
+        "WorldLevelRequire": 5,
+        "MaxLevel": 80,
+        "BaseHP": 440.64000000059605,
+        "BaseHPAdd": 6.480000000447035,
+        "BaseAttack": 293.7600000007078,
+        "BaseAttackAdd": 4.320000000298023,
+        "BaseDefence": 214.20000000018626,
+        "BaseDefenceAdd": 3.1500000001396984
       }
     ]
   },

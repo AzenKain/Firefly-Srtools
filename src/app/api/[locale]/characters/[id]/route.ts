@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { loadCharacters } from '@/lib/characterLoader'
+import { loadCharacters } from '@/lib/loader'
 
 export async function GET(
   req: NextRequest,

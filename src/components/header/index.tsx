@@ -2,7 +2,6 @@
 import { connectToPS, downloadJson, syncDataToPS } from "@/helper";
 import { converterToFreeSRJson } from "@/helper/converterToFreeSRJson";
 import { useChangeTheme } from "@/hooks/useChangeTheme";
-
 import { listCurrentLanguage } from "@/lib/constant";
 import useLocaleStore from "@/stores/localeStore";
 import useUserDataStore from "@/stores/userDataStore";
@@ -18,6 +17,7 @@ import { toast } from "react-toastify";
 import { micsSchema } from "@/zod";
 import useConnectStore from "@/stores/connectStore";
 import useGlobalStore from "@/stores/globalStore";
+import MonsterBar from "../monsterBar";
 
 const themes = [
     { label: "Winter" },
@@ -29,15 +29,34 @@ const themes = [
 export default function Header() {
     const { changeTheme } = useChangeTheme()
     const { locale, setLocale } = useLocaleStore()
-    const { avatars, battle_config, setAvatars, setBattleConfig } = useUserDataStore()
+    const { 
+        avatars, 
+        battle_type, 
+        setAvatars, 
+        setBattleType,
+        moc_config,
+        pf_config,
+        as_config,
+        ce_config,
+        setMocConfig,
+        setPfConfig,
+        setAsConfig,
+        setCeConfig,
+    } = useUserDataStore()
 
     const router = useRouter()
     const transI18n = useTranslations("DataPage")
-    const { setIsOpenImport, isOpenImport } = useModelStore()
+    const { 
+        setIsOpenImport, 
+        isOpenImport, 
+        setIsOpenMonster, 
+        isOpenMonster,
+        setIsOpenConnect,
+        isOpenConnect
+    } = useModelStore()
 
     const [message, setMessage] = useState({ text: '', type: '' });
     const [importModal, setImportModal] = useState("enka");
-    const [isModalOpen, setIsModalOpen] = useState(false);
     const {
         connectionType,
         privateType,
@@ -84,17 +103,14 @@ export default function Header() {
     }
 
     const handleShow = (modalId: string) => {
-
         const modal = document.getElementById(modalId) as HTMLDialogElement | null;
         if (modal) {
-            setIsModalOpen(true);
             modal.showModal();
         }
     };
 
     // Close modal handler
     const handleCloseModal = (modalId: string) => {
-        setIsModalOpen(false);
         const modal = document.getElementById(modalId) as HTMLDialogElement | null;
         if (modal) {
             modal.close()
@@ -107,16 +123,25 @@ export default function Header() {
             handleCloseModal("import_modal");
             return;
         }
+        if (!isOpenMonster) {
+            handleCloseModal("monster_modal");
+            return;
+        }
+        if (!isOpenConnect) {
+            handleCloseModal("connect_modal");
+            return;
+        }
         const handleEscKey = (event: KeyboardEvent) => {
             if (event.key === 'Escape') {
+                handleCloseModal("connect_modal");
                 handleCloseModal("import_modal");
+                handleCloseModal("monster_modal");
             }
-
         };
 
         window.addEventListener('keydown', handleEscKey);
         return () => window.removeEventListener('keydown', handleEscKey);
-    }, [isModalOpen, isOpenImport]);
+    }, [isOpenImport, isOpenMonster, isOpenConnect]);
 
     const handleImportDatabase = (event: React.ChangeEvent<HTMLInputElement>) => {
 
@@ -139,9 +164,13 @@ export default function Header() {
                     const data = JSON.parse(e.target?.result as string);
                     const parsed = micsSchema.parse(data)
                     setAvatars(parsed.avatars)
-                    setBattleConfig(parsed.battle_config)
+                    setBattleType(parsed.battle_type)
+                    setMocConfig(parsed.moc_config)
+                    setPfConfig(parsed.pf_config)
+                    setAsConfig(parsed.as_config)
+                    setCeConfig(parsed.ce_config)
                     toast.success(transI18n("importDatabaseSuccess"))
-                } catch (error) {
+                } catch  {
                     toast.error(transI18n("fileMustBeAValidJsonFile"))
                 }
             };
@@ -201,25 +230,31 @@ export default function Header() {
                             <details>
                                 <summary className="px-3 py-2 hover:bg-base-200 rounded-md transition-all duration-200 font-medium">{transI18n("exportData")}</summary>
                                 <ul className="p-2">
-                                    <li><a onClick={() => downloadJson("freesr-data", converterToFreeSRJson(avatars, battle_config))}>{transI18n("freeSr")}</a></li>
-                                    <li><a onClick={() => downloadJson("database-data", { avatars: avatars, battle_config: battle_config })}>{transI18n("database")}</a></li>
+                                    <li><a onClick={() => downloadJson("freesr-data", converterToFreeSRJson(avatars, battle_type, moc_config, pf_config, as_config, ce_config))}>{transI18n("freeSr")}</a></li>
+                                    <li><a onClick={() => downloadJson("database-data", { avatars: avatars, battle_type: battle_type, moc_config: moc_config, pf_config: pf_config, as_config: as_config, ce_config: ce_config })}>{transI18n("database")}</a></li>
                                 </ul>
                             </details>
                         </li>
                         <li>
                             <button
                                 className="px-3 py-2 hover:bg-base-200 rounded-md transition-all duration-200 font-medium"
-                                onClick={() => handleShow("connection_modal")}
+                                onClick={() => {
+                                    setIsOpenConnect(true)
+                                    handleShow("connect_modal")
+                                }}
                             >
                                 {transI18n("connectSetting")}
                             </button>
                         </li>
                         <li>
                             <button
-                                disabled
+                                onClick={() => {
+                                    setIsOpenMonster(true)
+                                    handleShow("monster_modal")
+                                }}
                                 className="disabled px-3 py-2 hover:bg-base-200 rounded-md transition-all duration-200 font-medium"
                             >
-                                {transI18n("monsterSetting")} ({transI18n("comingSoon")})
+                                {transI18n("monsterSetting")}
                             </button>
                         </li>
                     </ul>
@@ -279,25 +314,31 @@ export default function Header() {
                         <details>
                             <summary className="px-3 py-2 hover:bg-base-200 rounded-md transition-all duration-200 font-medium">{transI18n("exportData")}</summary>
                             <ul className="p-2">
-                                <li><a onClick={() => downloadJson("freesr-data", converterToFreeSRJson(avatars, battle_config))}>{transI18n("freeSr")}</a></li>
-                                <li><a onClick={() => downloadJson("database-data", { avatars: avatars, battle_config: battle_config })}>{transI18n("database")}</a></li>
+                                <li><a onClick={() => downloadJson("freesr-data", converterToFreeSRJson(avatars, battle_type, moc_config, pf_config, as_config, ce_config))}>{transI18n("freeSr")}</a></li>
+                                <li><a onClick={() => downloadJson("database-data", { avatars: avatars, battle_type: battle_type, moc_config: moc_config, pf_config: pf_config, as_config: as_config, ce_config: ce_config })}>{transI18n("database")}</a></li>
                             </ul>
                         </details>
                     </li>
                     <li>
                         <button
                             className="px-3 py-2 hover:bg-base-200 rounded-md transition-all duration-200 font-medium"
-                            onClick={() => handleShow("connection_modal")}
+                            onClick={() => {
+                                setIsOpenConnect(true)
+                                handleShow("connect_modal")
+                            }}
                         >
                             {transI18n("connectSetting")}
                         </button>
                     </li>
                     <li>
                         <button
-                            disabled
-                            className="disabled:opacity-50 px-3 py-2 hover:bg-base-200 rounded-md transition-all duration-200 font-medium"
+                            onClick={() => {
+                                setIsOpenMonster(true)
+                                handleShow("monster_modal")
+                            }}
+                            className="px-3 py-2 hover:bg-base-200 rounded-md transition-all duration-200 font-medium"
                         >
-                            {transI18n("monsterSetting")} ({transI18n("comingSoon")})
+                            {transI18n("monsterSetting")}
                         </button>
                     </li>
                 </ul>
@@ -409,14 +450,17 @@ export default function Header() {
                 </Link>
             </div>
 
-            <dialog id="connection_modal" className="modal sm:modal-middle backdrop-blur-sm">
+            <dialog id="connect_modal" className="modal sm:modal-middle backdrop-blur-sm">
                 <div className="modal-box w-11/12 max-w-7xl bg-base-100 text-base-content border border-purple-500/50 shadow-lg shadow-purple-500/20">
                     <div className="sticky top-0 z-10">
                         <motion.button
                             whileHover={{ scale: 1.1, rotate: 90 }}
                             transition={{ duration: 0.2 }}
                             className="btn btn-circle btn-md absolute right-2 top-2 bg-red-600 hover:bg-red-700 text-white border-none"
-                            onClick={() => handleCloseModal("connection_modal")}
+                            onClick={() => {
+                                setIsOpenConnect(false)
+                                handleCloseModal("connect_modal")
+                            }}
                         >
                             ✕
                         </motion.button>
@@ -597,6 +641,32 @@ export default function Header() {
                     {importModal === "freesr" && <FreeSRImport />}
                 </div>
             </dialog>
+
+            <dialog id="monster_modal" className="modal sm:backdrop-blur-sm md:backdrop-blur-none">
+                <div className="modal-box w-11/12 max-w-max bg-base-100 text-base-content border border-purple-500/50 shadow-lg shadow-purple-500/20">
+                    <div className="sticky top-0 z-10">
+                        <motion.button
+                            whileHover={{ scale: 1.1, rotate: 90 }}
+                            transition={{ duration: 0.2 }}
+                            className="btn btn-circle btn-md absolute right-2 top-2 bg-red-600 hover:bg-red-700 text-white border-none"
+                            onClick={() => {
+                                handleCloseModal("monster_modal")
+                                setIsOpenMonster(false)
+                            }}
+                        >
+                            ✕
+                        </motion.button>
+                    </div>
+
+                    <div className="border-b border-purple-500/30 px-6 py-4 mb-4">
+                        <h3 className="font-bold text-2xl text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-cyan-400">
+                            {transI18n("monsterSetting")}
+                        </h3>
+                    </div>
+                    <MonsterBar />
+                </div>
+            </dialog>
+
         </div>
     )
 }

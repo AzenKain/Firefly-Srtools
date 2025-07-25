@@ -1,6 +1,6 @@
 import fs from 'fs';
 import path from 'path';
-import { getLightconeInfoApi } from './api';
+import { getLightconeInfoApi } from '../api';
 import { LightConeDetail } from '@/types';
 
 const DATA_DIR = path.join(process.cwd(), 'data');

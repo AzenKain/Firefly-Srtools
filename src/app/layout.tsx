@@ -9,6 +9,7 @@ import { getLocale, getMessages } from "next-intl/server";
 import { ToastContainer } from 'react-toastify';
 import AvatarBar from "@/components/avatarBar";
 import ActionBar from "@/components/actionBar";
+import QueryProviderWrapper from "@/components/queryProvider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -39,25 +40,27 @@ export default async function RootLayout({
         suppressHydrationWarning
       >
         <NextIntlClientProvider messages={messages}>
-          <ThemeProvider>
-            <ClientThemeWrapper>
-              <div className="min-h-screen w-full">
-                <Header />
-                <div className="grid grid-cols-12 w-full">
-                  <div className="col-span-3 sticky top-0 self-start h-fit">
-                    <AvatarBar />
-                  </div>
-                  <div className="col-span-9">
-                    <ActionBar />
-                    {children}
+          <QueryProviderWrapper>
+            <ThemeProvider>
+              <ClientThemeWrapper>
+                <div className="min-h-screen w-full">
+                  <Header />
+                  <div className="grid grid-cols-12 w-full">
+                    <div className="col-span-3 sticky top-0 self-start h-fit">
+                      <AvatarBar />
+                    </div>
+                    <div className="col-span-9">
+                      <ActionBar />
+                      {children}
 
+                    </div>
                   </div>
+                  <Footer />
                 </div>
-                <Footer />
-              </div>
 
-            </ClientThemeWrapper>
-          </ThemeProvider>
+              </ClientThemeWrapper>
+            </ThemeProvider>
+          </QueryProviderWrapper>
         </NextIntlClientProvider>
         <ToastContainer />
       </body>

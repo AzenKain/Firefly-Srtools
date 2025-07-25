@@ -3,7 +3,7 @@ import useRelicStore from '@/stores/relicStore';
 import useUserDataStore from '@/stores/userDataStore';
 import { AffixDetail, RelicDetail } from '@/types';
 import React, { useEffect, useMemo } from 'react';
-import SelectCustom from '../select';
+import SelectCustomImage from '../select/customSelectImage';
 import { calcAffixBonus, randomPartition, randomStep, replaceByParam } from '@/helper';
 import useAffixStore from '@/stores/affixStore';
 import { mapingStats } from '@/lib/constant';
@@ -12,6 +12,7 @@ import useModelStore from '@/stores/modelStore';
 import useRelicMakerStore from '@/stores/relicMakerStore';
 import { toast } from 'react-toastify';
 import { useTranslations } from 'next-intl';
+import cloneDeep from 'lodash/cloneDeep'
 
 export default function RelicMaker() {
     const { avatars, setAvatars } = useUserDataStore()
@@ -77,7 +78,7 @@ export default function RelicMaker() {
         const mainProp = mainAffixMap[selectedMainStat]?.property;
         if (!mainProp) return;
     
-        const newSubAffixes = listSelectedSubStats.map(item => ({ ...item }));
+        const newSubAffixes = cloneDeep(listSelectedSubStats);
         let updated = false;
     
         for (let i = 0; i < newSubAffixes.length; i++) {
@@ -91,6 +92,7 @@ export default function RelicMaker() {
         }
     
         if (updated) setListSelectedSubStats(newSubAffixes);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [selectedMainStat, mapSubAffix, mapMainAffix, selectedRelicSlot]);
 
     const exSubAffixOptions = useMemo(() => {
@@ -129,7 +131,7 @@ export default function RelicMaker() {
     }, [mapMainAffix, selectedRelicSlot, selectedMainStat, selectedRelicLevel]);
     
     const handleSubStatChange = (key: string, index: number, rollCount: number, stepCount: number) => {
-        const newSubAffixes = listSelectedSubStats.map(item => ({ ...item }));
+        const newSubAffixes = cloneDeep(listSelectedSubStats);
         if (!subAffixOptions[key]) {
             newSubAffixes[index].affixId = "";
             newSubAffixes[index].property = "";
@@ -153,8 +155,8 @@ export default function RelicMaker() {
         const keys = Object.keys(preSelectedSubStats[index]);
         if (keys.length <= 1) return;
 
-        const newSubAffixes = listSelectedSubStats.map(item => ({ ...item }));
-        const listHistory = preSelectedSubStats[index].map(item => ({ ...item }));
+        const newSubAffixes = cloneDeep(listSelectedSubStats);
+        const listHistory = cloneDeep(preSelectedSubStats[index]);
         const secondLastKey = listHistory.length - 2;
         const preSubAffixes = { ...listHistory[secondLastKey] };
         newSubAffixes[index].rollCount = preSubAffixes.rollCount;
@@ -164,7 +166,7 @@ export default function RelicMaker() {
       };
 
     const resetSubStat = (index: number) => {
-        const newSubAffixes = listSelectedSubStats.map(item => ({ ...item }));
+        const newSubAffixes = cloneDeep(listSelectedSubStats);
         resetHistory(index);
         newSubAffixes[index].affixId = "";
         newSubAffixes[index].property = "";
@@ -174,7 +176,7 @@ export default function RelicMaker() {
     };
 
     const randomizeStats = () => {
-        const newSubAffixes = listSelectedSubStats.map(item => ({ ...item }));
+        const newSubAffixes = cloneDeep(listSelectedSubStats);
         const exKeys = Object.keys(exSubAffixOptions);
         for (let i = 0; i < newSubAffixes.length; i++) {
             const keys = Object.keys(subAffixOptions).filter((key) => !exKeys.includes(key));
@@ -194,7 +196,7 @@ export default function RelicMaker() {
     };
 
     const randomizeRolls = () => {
-        const newSubAffixes = listSelectedSubStats.map(item => ({ ...item }));
+        const newSubAffixes = cloneDeep(listSelectedSubStats);
         const randomRolls = randomPartition(9, listSelectedSubStats.length);
         for (let i = 0; i < listSelectedSubStats.length; i++) {
             newSubAffixes[i].rollCount = randomRolls[i];
@@ -252,7 +254,7 @@ export default function RelicMaker() {
                             {/* Main Stat */}
                             <div>
                                 <label className="block text-lg font-medium mb-2">{transI18n("mainStat")}</label>
-                                <SelectCustom
+                                <SelectCustomImage
                                     customSet={Object.entries(mapMainAffix["5" + selectedRelicSlot] || {}).map(([key, value]) => ({
                                         value: key,
                                         label: mapingStats[value.property].name + " " + mapingStats[value.property].unit,
@@ -267,7 +269,7 @@ export default function RelicMaker() {
                             {/* Relic Set Selection */}
                             <div>
                                 <label className="block text-lg font-medium mb-2">{transI18n("set")}</label>
-                                <SelectCustom
+                                <SelectCustomImage
                                     customSet={Object.entries(relicSets).map(([key, value]) => ({
                                         value: key,
                                         label: value.Name,
@@ -356,7 +358,7 @@ export default function RelicMaker() {
 
                                 {/* Stat Selection */}
                                 <div className="col-span-8">
-                                    <SelectCustom
+                                    <SelectCustomImage
                                         customSet={Object.entries(subAffixOptions).map(([key, value]) => ({
                                             value: key,
                                             label: mapingStats[value.property].name + " " + mapingStats[value.property].unit,

@@ -1,9 +1,8 @@
 "use client"
 
-import { useRouter } from 'next/navigation'
 import useAvatarStore from "@/stores/avatarStore"
 import useUserDataStore from "@/stores/userDataStore";
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo } from "react";
 import { motion } from "framer-motion";
 import LightconeBar from '../lightconeBar'
 import useLightconeStore from '@/stores/lightconeStore'
@@ -16,7 +15,6 @@ import useModelStore from '@/stores/modelStore';
 import useMazeStore from '@/stores/mazeStore';
 
 export default function AvatarInfo() {
-    const router = useRouter()
     const { avatarSelected, mapAvatarInfo } = useAvatarStore()
     const { Technique } = useMazeStore()
     const { avatars, setAvatars, setAvatar } = useUserDataStore()
@@ -252,7 +250,7 @@ export default function AvatarInfo() {
                                                         className="select select-bordered select-secondary"
                                                     >
                                                         <option value="">{transI18n("origin")}</option>
-                                                        {Object.entries(mapAvatarInfo[avatarSelected?.id || ""]?.Enhanced || {}).map(([key, value]) => (
+                                                        {Object.keys(mapAvatarInfo[avatarSelected?.id || ""]?.Enhanced || {}).map((key) => (
                                                             <option key={key} value={key}>
                                                                 {key}
                                                             </option>

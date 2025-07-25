@@ -1,5 +1,5 @@
 import { listCurrentLanguage } from "@/lib/constant";
-import { CharacterBasic, LightConeBasic } from "@/types";
+import { CharacterBasic, EventBasic, LightConeBasic, MonsterBasic } from "@/types";
 
 
 export function getNameChar(locale: string, data: CharacterBasic | undefined): string {
@@ -22,7 +22,7 @@ export function getNameChar(locale: string, data: CharacterBasic | undefined): s
     return text
 }
 
-export function getNameLightcone(locale: string, data: LightConeBasic | undefined): string {
+export function getLocaleName(locale: string, data: LightConeBasic | EventBasic | MonsterBasic | undefined): string {
     if (!data) {
         return ""
     }

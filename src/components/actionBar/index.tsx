@@ -24,7 +24,7 @@ export default function ActionBar() {
   const { avatarSelected, listRawAvatar } = useListAvatarStore()
   const { setListCopyAvatar } = useCopyProfileStore()
   const transI18n = useTranslations("DataPage")
-  const { locale, setLocale } = useLocaleStore()
+  const { locale } = useLocaleStore()
   const { isOpenCreateProfile, setIsOpenCreateProfile, isOpenCopy, setIsOpenCopy } = useModelStore()
   const { avatars, setAvatar } = useUserDataStore()
   const [profileName, setProfileName] = useState("");
@@ -106,7 +106,7 @@ export default function ActionBar() {
     window.addEventListener('keydown', handleEscKey);
 
     return () => window.removeEventListener('keydown', handleEscKey);
-  }, [isOpenCreateProfile]);
+  }, [isOpenCopy, isOpenCreateProfile]);
 
   const actionMove = (path: string) => {
     router.push(`/${path}`)
@@ -162,7 +162,7 @@ export default function ActionBar() {
               {avatarSelected && (
                 <>
                   <Image
-                    src={"https://api.hakush.in/hsr/UI/element/" + avatarSelected.damageType.toLowerCase() + ".webp"}
+                    src={ `/icon/${avatarSelected.damageType.toLowerCase()}.webp`}
                     alt={'fire'}
                     className="h-[40px] w-[40px] object-contain"
                     width={100}
@@ -209,7 +209,7 @@ export default function ActionBar() {
                   <li key={index} className="grid grid-cols-12">
                     <button
                       className={`col-span-8 btn btn-ghost`}
-                      onClick={(e) => handleProfileSelect(index)}
+                      onClick={() => handleProfileSelect(index)}
                     >
                       <span className="flex-1 truncate text-left">
                         {profile.profile_name}

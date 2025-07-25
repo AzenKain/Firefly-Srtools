@@ -1,18 +1,69 @@
-import { AvatarJson, AvatarStore, BattleConfigJson, BattleConfigStore, FreeSRJson, LightconeJson, RelicJson } from "@/types";
-import useUserDataStore from "@/stores/userDataStore";
+import { ASConfigStore, AvatarJson, AvatarStore, BattleConfigJson, CEConfigStore, FreeSRJson, LightconeJson, MOCConfigStore, PFConfigStore, RelicJson } from "@/types";
 
-export function converterToFreeSRJson(avatars: Record<string, AvatarStore>, battle_config: BattleConfigStore): FreeSRJson {
+
+export function converterToFreeSRJson(
+    avatars: Record<string, AvatarStore>,
+    battle_type: string,
+    moc_config: MOCConfigStore,
+    pf_config: PFConfigStore,
+    as_config: ASConfigStore,
+    ce_config: CEConfigStore,
+): FreeSRJson {
     const lightcones: LightconeJson[] = []
     const relics: RelicJson[] = []
-    const battleJson: BattleConfigJson = {
-        battle_type: battle_config.battle_type,
-        blessings: battle_config.blessings,
-        custom_stats: battle_config.custom_stats,
-        cycle_count: battle_config.cycle_count,
-        stage_id: battle_config.stage_id,
-        path_resonance_id: battle_config.path_resonance_id,
-        monsters: battle_config.monsters,
+    let battleJson: BattleConfigJson
+    if (battle_type === "MOC") {
+        battleJson = {
+            battle_type: battle_type,
+            blessings: moc_config.blessings,
+            custom_stats: [],
+            cycle_count: moc_config.cycle_count,
+            stage_id: moc_config.stage_id,
+            path_resonance_id: 0,
+            monsters: moc_config.monsters,
+        }
+    } else if (battle_type === "PF") {
+        battleJson = {
+            battle_type: battle_type,
+            blessings: pf_config.blessings,
+            custom_stats: [],
+            cycle_count: pf_config.cycle_count,
+            stage_id: pf_config.stage_id,
+            path_resonance_id: 0,
+            monsters: pf_config.monsters,
+        }
+    } else if (battle_type === "AS") {
+        battleJson = {
+            battle_type: battle_type,
+            blessings: as_config.blessings,
+            custom_stats: [],
+            cycle_count: as_config.cycle_count,
+            stage_id: as_config.stage_id,
+            path_resonance_id: 0,
+            monsters: as_config.monsters,
+        }
+    } else if (battle_type === "CE") {
+        battleJson = {
+            battle_type: battle_type,
+            blessings: ce_config.blessings,
+            custom_stats: [],
+            cycle_count: ce_config.cycle_count,
+            stage_id: ce_config.stage_id,
+            path_resonance_id: 0,
+            monsters: ce_config.monsters,
+        }
+    } else {
+        battleJson = {
+            battle_type: battle_type,
+            blessings: [],
+            custom_stats: [],
+            cycle_count: 0,
+            stage_id: 0,
+            path_resonance_id: 0,
+            monsters: [],
+        }
     }
+
     const avatarsJson: { [key: string]: AvatarJson } = {}
     let internalUidLightcone = 0
     let internalUidRelic = 0

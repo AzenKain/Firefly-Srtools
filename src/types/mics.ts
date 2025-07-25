@@ -59,13 +59,53 @@ export type BattleBuffStore = {
     id: number;
     dynamic_key?: DynamicKeyStore;
 }
-
-export type BattleConfigStore = {
-    battle_type: string;
+export type MOCConfigStore = {
+    event_id: number;
+    challenge_id: number;
+    floor_side: string;
+    use_turbulence_buff: boolean;
+    use_cycle_count: boolean;
     blessings: BattleBuffStore[]
-    custom_stats: SubAffixStore[];
     cycle_count: number;
     stage_id: number;
-    path_resonance_id: number;
     monsters: MonsterStore[][];
+}
+
+export type PFConfigStore = {
+    event_id: number;
+    challenge_id: number;
+    buff_id: number;
+    floor_side: string;
+    blessings: BattleBuffStore[]
+    cycle_count: number;
+    stage_id: number;
+    monsters: MonsterStore[][];
+}
+
+export type ASConfigStore = {
+    event_id: number;
+    challenge_id: number;
+    buff_id: number;
+    floor_side: string;
+    blessings: BattleBuffStore[]
+    cycle_count: number;
+    stage_id: number;
+    monsters: MonsterStore[][];
+}
+
+export type CEConfigStore = {
+
+    blessings: BattleBuffStore[]
+    cycle_count: number;
+    stage_id: number;
+    monsters: MonsterStore[][];
+}
+
+export interface Mics {
+    avatars: Record<string, AvatarStore>,
+    battle_type: string;
+    moc_config: MOCConfigStore;
+    pf_config: PFConfigStore;
+    as_config: ASConfigStore;
+    ce_config: CEConfigStore;
 }

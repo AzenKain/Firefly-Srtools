@@ -8,6 +8,10 @@ interface ModelState {
     isOpenCreateProfile: boolean;
     isOpenImport: boolean;
     isOpenCopy: boolean;
+    isOpenMonster: boolean;
+    isOpenConnect: boolean;
+    setIsOpenConnect: (newIsOpenConnect: boolean) => void;
+    setIsOpenMonster: (newIsOpenMonster: boolean) => void;
     setIsOpenLightcone: (newIsOpenLightcone: boolean) => void;
     setIsOpenRelic: (newIsOpenRelic: boolean) => void;
     setIsOpenAvatar: (newIsOpenAvatar: boolean) => void;
@@ -16,13 +20,17 @@ interface ModelState {
     setIsOpenCopy: (newIsOpenCopy: boolean) => void;
 }
 
-const useModelStore = create<ModelState>((set, get) => ({
+const useModelStore = create<ModelState>((set) => ({
     isOpenLightcone: false,
     isOpenRelic: false,
     isOpenAvatar: false,
     isOpenCreateProfile: false,
     isOpenImport: false,
     isOpenCopy: false,
+    isOpenMonster: false,
+    isOpenConnect: false,
+    setIsOpenConnect: (newIsOpenConnect: boolean) => set({ isOpenConnect: newIsOpenConnect }),
+    setIsOpenMonster: (newIsOpenMonster: boolean) => set({ isOpenMonster: newIsOpenMonster }),
     setIsOpenLightcone: (newIsOpenLightcone: boolean) => set({ isOpenLightcone: newIsOpenLightcone }),
     setIsOpenRelic: (newIsOpenRelic: boolean) => set({ isOpenRelic: newIsOpenRelic }),
     setIsOpenAvatar: (newIsOpenAvatar: boolean) => set({ isOpenAvatar: newIsOpenAvatar }),

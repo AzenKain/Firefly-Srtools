@@ -26,6 +26,7 @@ export default function LightconeBar() {
             path: Object.keys(listPath).filter((key) => listPath[key]),
             rarity: Object.keys(listRank).filter((key) => listRank[key])
         })
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [listPath, listRank, locale])
 
     return (
@@ -49,7 +50,7 @@ export default function LightconeBar() {
                     <div className="grid grid-cols-12 mt-1 w-full">
                         <div className="grid justify-items-start col-span-8">
                             <div className="grid grid-cols-3 md:grid-cols-6 lg:grid-cols-8 mb-1 mx-1 gap-2">
-                                {Object.entries(listPath).map(([key, value], index) => (
+                                {Object.keys(listPath).map((key, index) => (
                                     <div
                                         key={index}
                                         onClick={() => {
@@ -59,8 +60,8 @@ export default function LightconeBar() {
                                         style={{
                                             backgroundColor: listPath[key] ? "#374151" : "#6B7280"
                                         }}>
-                                        <Image src={"https://api.hakush.in/hsr/UI/pathicon/" + key + ".webp"}
-                                            alt={key}
+                                        <Image src={`/icon/${key}.webp`}
+                                            alt={key}   
                                             className="h-[32px] w-[32px] object-contain rounded-md "
                                             width={200}
                                             height={200} />
@@ -71,7 +72,7 @@ export default function LightconeBar() {
 
                         <div className="grid justify-items-end col-span-4 w-full">
                             <div className="grid grid-cols-1 sm:grid-cols-3 mb-1 mx-1 gap-2">
-                                {Object.entries(listRank).map(([key, value], index) => (
+                                {Object.keys(listRank).map((key, index) => (
                                     <div
                                         key={index}
                                         onClick={() => {

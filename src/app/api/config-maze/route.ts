@@ -1,4 +1,4 @@
-import { loadConfigMaze } from "@/lib/configMazeLoader";
+import { loadConfigMaze } from "@/lib/loader";
 import { NextResponse } from "next/server";
 
 export async function GET() {

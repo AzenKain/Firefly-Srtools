@@ -1,11 +1,8 @@
-"use client"
-  ;
-import { useRouter } from 'next/navigation'
-import { useCallback, useEffect, useMemo, useState } from "react";
+"use client";
+import { useCallback, useEffect, useMemo } from "react";
 import RelicMaker from "../relicBar";
 import { motion } from "framer-motion";
 import useUserDataStore from "@/stores/userDataStore";
-import useLocaleStore from "@/stores/localeStore";
 import { useTranslations } from "next-intl";
 import RelicCard from "../card/relicCard";
 import useAvatarStore from "@/stores/avatarStore";
@@ -16,7 +13,6 @@ import useRelicMakerStore from '@/stores/relicMakerStore';
 import useAffixStore from '@/stores/affixStore';
 
 export default function RelicsInfo() {
-  const router = useRouter()
   const { avatars, setAvatars } = useUserDataStore()
   const { avatarSelected } = useAvatarStore()
   const {
@@ -32,7 +28,7 @@ export default function RelicsInfo() {
   const { mapSubAffix } = useAffixStore()
   const { isOpenRelic, setIsOpenRelic } = useModelStore()
   const transI18n = useTranslations("DataPage")
-  const { locale } = useLocaleStore();
+ 
   const { mapRelicInfo } = useRelicStore()
 
   const handleShow = (modalId: string) => {
@@ -67,6 +63,7 @@ export default function RelicsInfo() {
 
     window.addEventListener('keydown', handleEscKey);
     return () => window.removeEventListener('keydown', handleEscKey);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isOpenRelic]);
 
   const getRelic = useCallback((slot: string) => {
@@ -124,7 +121,7 @@ export default function RelicsInfo() {
     const avatar = avatars[avatarSelected?.id || ""];
     const relicCount: { [key: string]: number } = {};
     if (avatar) {
-      for (const [slot, relic] of Object.entries(avatar.profileList[avatar.profileSelect].relics)) {
+      for (const relic of Object.values(avatar.profileList[avatar.profileSelect].relics)) {
         if (relicCount[relic.relic_set_id]) {
           relicCount[relic.relic_set_id]++;
         } else {
@@ -152,7 +149,7 @@ export default function RelicsInfo() {
             <div className="bg-base-100 rounded-xl p-6 shadow-lg">
               <h2 className="flex items-center gap-2 text-2xl font-bold mb-6 text-base-content">
                 <div className="w-2 h-6 bg-gradient-to-b from-primary to-primary/50 rounded-full"></div>
-                Equipment
+                {transI18n("relics")}
               </h2>
 
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-2xl mx-auto">
@@ -170,16 +167,14 @@ export default function RelicsInfo() {
                       />
                     </div>
 
-                    {/* Action buttons - chỉ hiện khi hover */}
                     <div className="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 flex gap-1">
-                      {/* Nút chuyển relic */}
                       <button
                         onClick={(e) => {
                           e.stopPropagation()
                           handlerChangeRelic(item)
                         }}
                         className="btn btn-info p-1.5 rounded-full shadow-lg transition-colors duration-200"
-                        title="Chuyển relic"
+                        title={transI18n("changeRelic")}
                       >
                         <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
@@ -190,12 +185,12 @@ export default function RelicsInfo() {
                         <button
                           onClick={(e) => {
                             e.stopPropagation()
-                            if (window.confirm(`Bạn có chắc muốn xóa relic ở slot ${item}?`)) {
+                            if (window.confirm(`${transI18n("deleteRelicConfirm")} ${item}?`)) {
                               handlerDeleteRelic(item)
                             }
                           }}
                           className="btn btn-error p-1.5 rounded-full shadow-lg transition-colors duration-200"
-                          title="Xóa relic"
+                          title={transI18n("deleteRelic")}
                         >
                           <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
@@ -216,7 +211,7 @@ export default function RelicsInfo() {
             <div className="bg-base-100 rounded-xl p-6 shadow-lg">
               <h3 className="flex items-center gap-2 text-xl font-bold mb-4 text-base-content">
                 <div className="w-2 h-6 bg-gradient-to-b from-primary to-primary/50 rounded-full"></div>
-                Set Effects
+                {transI18n("setEffects")}
               </h3>
 
               <div className="space-y-6">

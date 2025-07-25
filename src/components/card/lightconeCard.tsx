@@ -1,6 +1,6 @@
 "use client";
 
-import { getNameLightcone } from '@/helper';
+import { getLocaleName } from '@/helper';
 import useLocaleStore from '@/stores/localeStore';
 import { LightConeBasic } from '@/types';
 import ParseText from '../parseText';
@@ -12,7 +12,7 @@ interface LightconeCardProps {
 export default function LightconeCard({ data }: LightconeCardProps) {
 
     const { locale } = useLocaleStore();
-    const text = getNameLightcone(locale, data)
+    const text = getLocaleName(locale, data)
     return (
         <li className="z-10 flex flex-col items-center rounded-md shadow-lg 
             bg-gradient-to-b from-customStart to-customEnd transform transition-transform duration-300 

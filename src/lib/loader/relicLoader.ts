@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
-import { getRelicInfoApi } from './api';
 import { RelicDetail } from '@/types';
+import { getRelicInfoApi } from '../api';
 
 const DATA_DIR = path.join(process.cwd(), 'data');
 const relicFileCache: Record<string, Record<string, RelicDetail>> = {};

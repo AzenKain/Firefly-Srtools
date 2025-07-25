@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
-import { getCharacterInfoApi } from './api';
 import { CharacterDetail } from '@/types/characterDetail';
+import { getCharacterInfoApi } from '../api';
 
 const DATA_DIR = path.join(process.cwd(), 'data');
 const characterFileCache: Record<string, Record<string, CharacterDetail>> = {};

@@ -1,9 +1,7 @@
 
-import { CharacterBasic, CharacterBasicRaw } from "@/types/characterBasic";
-import { AffixDetail, CharacterDetail, ConfigMaze, EnkaResponse, FreeSRJson, LightConeBasic, LightConeBasicRaw, LightConeDetail, PSResponse, RelicBasic, RelicBasicEffect, RelicBasicRaw, RelicDetail } from "@/types";
+import { AffixDetail, ASDetail, CharacterDetail, ConfigMaze, FreeSRJson, LightConeDetail, MocDetail, PFDetail, PSResponse, RelicDetail } from "@/types";
 import axios from 'axios';
-import { convertAvatar, convertLightcone, convertRelicSet } from "@/helper";
-import { psResponseSchema } from "@/zod";
+import { pSResponseSchema } from "@/zod";
 
 export async function getConfigMazeApi(): Promise<ConfigMaze> {
     try {
@@ -76,72 +74,6 @@ export async function getSubAffixApi(): Promise<Record<string, Record<string, Af
     }
 }
 
-export async function getCharacterInfoApi(avatarId: number, locale: string): Promise<CharacterDetail | null> {
-    try {
-        const res = await axios.get<CharacterDetail>(
-            `https://api.hakush.in/hsr/data/${locale}/character/${avatarId}.json`,
-            {
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-            }
-        );
-
-        return res.data as CharacterDetail;
-    } catch (error: unknown) {
-        if (axios.isAxiosError(error)) {
-            console.log(`Error: ${error.response?.status} - ${error.message}`);
-        } else {
-            console.log(`Unexpected error: ${String(error)}`);
-        }
-        return null;
-    }
-}
-
-export async function getLightconeInfoApi(lightconeId: number, locale: string): Promise<LightConeDetail | null> {
-    try {
-        const res = await axios.get<LightConeDetail>(
-            `https://api.hakush.in/hsr/data/${locale}/lightcone/${lightconeId}.json`,
-            {
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-            }
-        );
-
-        return res.data as LightConeDetail;
-    } catch (error: unknown) {
-        if (axios.isAxiosError(error)) {
-            console.log(`Error: ${error.response?.status} - ${error.message}`);
-        } else {
-            console.log(`Unexpected error: ${String(error)}`);
-        }
-        return null;
-    }
-}
-
-export async function getRelicInfoApi(relicId: number, locale: string): Promise<RelicDetail | null> {
-    try {
-        const res = await axios.get<RelicDetail>(
-            `https://api.hakush.in/hsr/data/${locale}/relicset/${relicId}.json`,
-            {
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-            }
-        );
-
-        return res.data as RelicDetail;
-    } catch (error: unknown) {
-        if (axios.isAxiosError(error)) {
-            console.log(`Error: ${error.response?.status} - ${error.message}`);
-        } else {
-            console.log(`Unexpected error: ${String(error)}`);
-        }
-        return null;
-    }
-}
-
 export async function fetchCharacterByIdNative(id: string, locale: string): Promise<CharacterDetail | null> {
     try {
         const res = await axios.get<CharacterDetail>(`/api/${locale}/characters/${id}`);
@@ -202,82 +134,71 @@ export async function fetchRelicsByIdsNative(ids: string[], locale: string): Pro
     }
 }
 
-export async function getCharacterListApi(): Promise<CharacterBasic[]> {
+export async function fetchASByIdsNative(ids: string[], locale: string): Promise<Record<string, ASDetail> | null> {
     try {
-        const res = await axios.get<Record<string, CharacterBasicRaw>>(
-            'https://api.hakush.in/hsr/data/character.json',
-            {
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-            }
-        );
-
-        const data = new Map(Object.entries(res.data));
-
-        return Array.from(data.entries()).map(([id, it]) => convertAvatar(id, it));
-    } catch (error: unknown) {
-        if (axios.isAxiosError(error)) {
-            console.log(`Error: ${error.response?.status} - ${error.message}`);
-        } else {
-            console.log(`Unexpected error: ${String(error)}`);
-        }
-        return [];
+        const res = await axios.post<Record<string, ASDetail>>(`/api/${locale}/as`, { asIds: ids });
+        return res.data;
+    } catch (error) {
+        console.error('Failed to fetch AS:', error);
+        return null;
     }
 }
 
-export async function getLightconeListApi(): Promise<LightConeBasic[]> {
+export async function fetchASByIdNative(ids: string, locale: string): Promise<ASDetail | null> {
     try {
-        const res = await axios.get<Record<string, LightConeBasicRaw>>(
-            'https://api.hakush.in/hsr/data/lightcone.json',
-            {
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-            }
-        );
-
-        const data = new Map(Object.entries(res.data));
-
-        return Array.from(data.entries()).map(([id, it]) => convertLightcone(id, it));
-    } catch (error: unknown) {
-        if (axios.isAxiosError(error)) {
-            console.log(`Error: ${error.response?.status} - ${error.message}`);
-        } else {
-            console.log(`Unexpected error: ${String(error)}`);
-        }
-        return [];
+        const res = await axios.get<ASDetail>(`/api/${locale}/as/${ids}`);
+        return res.data;
+    } catch (error) {
+        console.error('Failed to fetch AS:', error);
+        return null;
     }
 }
 
-export async function getRelicSetListApi(): Promise<RelicBasic[]> {
+export async function fetchPFByIdsNative(ids: string[], locale: string): Promise<Record<string, PFDetail> | null> {
     try {
-        const res = await axios.get<Record<string, RelicBasicRaw>>(
-            'https://api.hakush.in/hsr/data/relicset.json',
-            {
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-            }
-        );
+        const res = await axios.post<Record<string, PFDetail>>(`/api/${locale}/pf`, { pfIds: ids });
+        return res.data;
+    } catch (error) {
+        console.error('Failed to fetch PF:', error);
+        return null;
+    }
+}
 
-        const data = new Map(Object.entries(res.data));
+export async function fetchPFByIdNative(ids: string, locale: string): Promise<PFDetail | null> {
+    try {
+        const res = await axios.get<PFDetail>(`/api/${locale}/pf/${ids}`);
+        return res.data;
+    } catch (error) {
+        console.error('Failed to fetch PF:', error);
+        return null;
+    }
+}
 
-        return Array.from(data.entries()).map(([id, it]) => convertRelicSet(id, it));
-    } catch (error: unknown) {
-        if (axios.isAxiosError(error)) {
-            console.log(`Error: ${error.response?.status} - ${error.message}`);
-        } else {
-            console.log(`Unexpected error: ${String(error)}`);
-        }
-        return [];
+
+export async function fetchMOCByIdsNative(ids: string[], locale: string): Promise<Record<string, MocDetail[]> | null> {
+    try {
+        const res = await axios.post<Record<string, MocDetail[]>>(`/api/${locale}/moc`, { mocIds: ids });
+        return res.data;
+    } catch (error) {
+        console.error('Failed to fetch MOC:', error);
+        return null;
+    }
+}
+
+export async function fetchMOCByIdNative(ids: string, locale: string): Promise<MocDetail[] | null> {
+    try {
+        const res = await axios.get<MocDetail[]>(`/api/${locale}/moc/${ids}`);
+        return res.data;
+    } catch (error) {
+        console.error('Failed to fetch MOC:', error);
+        return null;
     }
 }
 
 export async function SendDataToServer(username: string, password: string, serverUrl: string, data: FreeSRJson | null): Promise<PSResponse | string> {
     try {
         const response = await axios.post(`${serverUrl}`, { username, password, data })
-        const parsed = psResponseSchema.safeParse(response.data)
+        const parsed = pSResponseSchema.safeParse(response.data)
         if (!parsed.success) {
             return "Invalid response schema";
         }

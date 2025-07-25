@@ -1,9 +1,9 @@
 "use client"
-import { SendDataThroughProxy, SendDataToServer } from "@/lib/api"
+import { SendDataThroughProxy, SendDataToServer } from "@/lib/api/api"
 import useConnectStore from "@/stores/connectStore"
 import useUserDataStore from "@/stores/userDataStore"
 import { converterToFreeSRJson } from "./converterToFreeSRJson"
-import { psResponseSchema } from "@/zod"
+import { pSResponseSchema } from "@/zod"
 
 export const connectToPS = async (): Promise<{ success: boolean, message: string }> => {
     const {
@@ -27,7 +27,7 @@ export const connectToPS = async (): Promise<{ success: boolean, message: string
         } else if (response.error) {
             return { success: false, message: response.error }
         } else {
-            const parsed = psResponseSchema.safeParse(response.data)
+            const parsed = pSResponseSchema.safeParse(response.data)
             if (!parsed.success) {
                 return { success: false, message: "Invalid response schema" }
             }
@@ -53,8 +53,8 @@ export const syncDataToPS = async (): Promise<{ success: boolean, message: strin
         password
     } = useConnectStore.getState()
 
-    const {avatars, battle_config} = useUserDataStore.getState()
-    const data = converterToFreeSRJson(avatars, battle_config)
+    const {avatars, battle_type, moc_config, pf_config, as_config, ce_config} = useUserDataStore.getState()
+    const data = converterToFreeSRJson(avatars, battle_type, moc_config, pf_config, as_config, ce_config)
 
     let urlQuery = serverUrl
     if (!urlQuery.startsWith("http://") && !urlQuery.startsWith("https://")) {
@@ -69,7 +69,7 @@ export const syncDataToPS = async (): Promise<{ success: boolean, message: strin
         } else if (response.error) {
             return { success: false, message: response.error }
         } else {
-            const parsed = psResponseSchema.safeParse(response.data)
+            const parsed = pSResponseSchema.safeParse(response.data)
             if (!parsed.success) {
                 return { success: false, message: "Invalid response schema" }
             }

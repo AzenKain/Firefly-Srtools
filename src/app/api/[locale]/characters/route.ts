@@ -1,4 +1,4 @@
-import { loadCharacters } from "@/lib/characterLoader";
+import { loadCharacters } from "@/lib/loader";
 import { NextRequest, NextResponse } from "next/server";
 
 export async function POST(request: NextRequest, { params }: { params: Promise<{ locale: string }> }) {

@@ -17,10 +17,18 @@ export type MOCConfigMaze = {
 export type AvatarConfigMaze = {
     maze_buff: number[];
 }
+export type StageConfigMaze = {
+    stage_id: number;
+    stage_type: string;
+    level: number;
+    monster_list: Array<Record<string, number>>;
+};
 
 export type ConfigMaze = {
     Avatar: Record<string, AvatarConfigMaze>;
     MOC: Record<string, MOCConfigMaze>;
     AS: Record<string, ASConfigMaze>;
     PF: Record<string, PFConfigMaze>;
+    Stage: Record<string, StageConfigMaze>;
 };
+

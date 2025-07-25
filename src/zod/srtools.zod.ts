@@ -76,7 +76,7 @@ export const freeSRJsonSchema = z.object({
   battle_config: battleConfigJsonSchema,
 });
 
-export const psResponseSchema = z.object({
+export const pSResponseSchema = z.object({
   status: z.number(),
   message: z.string(),
 });

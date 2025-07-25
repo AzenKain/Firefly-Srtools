@@ -1,4 +1,4 @@
-import { CharacterBasic, CharacterBasicRaw, LightConeBasic, LightConeBasicRaw, RelicBasic, RelicBasicEffect, RelicBasicRaw } from "@/types";
+import { CharacterBasic, CharacterBasicRaw, EventBasic, EventBasicRaw, LightConeBasic, LightConeBasicRaw, MonsterBasic, MonsterBasicRaw, RelicBasic, RelicBasicEffect, RelicBasicRaw } from "@/types";
 
 export function convertRelicSet(id: string, item: RelicBasicRaw): RelicBasic {
     let lang = new Map<string, string>([
@@ -86,4 +86,43 @@ export function convertAvatar(id: string, item: CharacterBasicRaw): CharacterBas
     return result;
 }
 
+export function convertEvent(id: string, item: EventBasicRaw): EventBasic {
+    let lang = new Map<string, string>([
+        ['en', item.en],
+        ['kr', item.kr],
+        ['cn', item.cn],
+        ['jp', item.jp]
+    ]);
+    const result: EventBasic = {
+        lang: lang,
+        id: id,
+        begin: item.begin,
+        end: item.end,
+        live_begin: item.live_begin,
+        live_end: item.live_end,
+        param: item.param,
+    };
 
+    return result;
+}
+
+export function convertMonster(id: string, item: MonsterBasicRaw): MonsterBasic {
+    let lang = new Map<string, string>([
+        ['en', item.en],
+        ['kr', item.kr],
+        ['cn', item.cn],
+        ['jp', item.jp]
+    ]);
+    const result: MonsterBasic = {
+        id: id,
+        rank: item.rank,
+        camp: item.camp,
+        icon: item.icon,
+        child: item.child,
+        weak: item.weak,
+        desc: item.desc,
+        lang: lang
+    };
+
+    return result;
+}
