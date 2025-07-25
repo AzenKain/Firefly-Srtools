@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     siteName: "Firefly SrTools",
     images: [
       {
-        url: "/ff-srtool.png",
+        url: "https://srtools.kain.id.vn/ff-srtool.png",
         width: 1200,
         height: 630,
         alt: "Firefly SrTools Logo",
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Firefly SrTools",
     description: "SrTools by Kain",
-    images: ["/ff-srtool.png"],
+    images: ["https://srtools.kain.id.vn/ff-srtool.png"],
   },
 };
 
