@@ -18,6 +18,7 @@ import { micsSchema } from "@/zod";
 import useConnectStore from "@/stores/connectStore";
 import useGlobalStore from "@/stores/globalStore";
 import MonsterBar from "../monsterBar";
+import Image from "next/image";
 
 const themes = [
     { label: "Winter" },
@@ -262,14 +263,19 @@ export default function Header() {
 
                 {/* Logo */}
 
-                <a className="hidden sm:grid sm:grid-cols-1 items-start text-left gap-0 hover:scale-105 px-2">
-                    <h1 className="text-xl font-bold">
-                        <span className="text-emerald-500">Firefly Sr</span>
-                        <span className="bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 via-orange-500 to-red-500">
-                            Tools
-                        </span>
-                    </h1>
-                    <p className="text-sm text-gray-500">By Kain</p>
+                <a className="hidden sm:grid sm:grid-cols-1 items-start justify-items-center text-left gap-0 hover:scale-105 px-2">
+                    <div className="flex items-center justify-center">
+                        <Image src="/ff-srtool.png" alt="Logo" width={50} height={50} />
+                        <div className="flex flex-col justify-center items-start">
+                            <h1 className="text-xl font-bold">
+                                <span className="text-emerald-500">Firefly Sr</span>
+                                <span className="bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 via-orange-500 to-red-500">
+                                    Tools
+                                </span>
+                            </h1>
+                            <p className="text-sm text-gray-500">By Kain</p>
+                        </div>
+                    </div>
                 </a>
 
             </div>

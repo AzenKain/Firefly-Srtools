@@ -318,13 +318,15 @@ export default function CeBar() {
                                                             }}
                                                         >
                                                             <div className="relative w-8 h-8 rounded-full overflow-hidden flex-shrink-0 border border-white/10 shadow-sm">
-                                                                <Image
-                                                                    src={`https://api.hakush.in/hsr/UI/monstermiddleicon/${listMonster.find((monster2) => monster2.child.includes(Number(monster.id)))?.icon?.split("/")?.pop()?.replace(".png", "")}.webp`}
-                                                                    alt="Enemy Icon"
-                                                                    width={376}
-                                                                    height={512}
-                                                                    className="w-full h-full object-cover"
-                                                                />
+                                                                {listMonster.find((monster2) => monster2.child.includes(Number(monster.id)))?.icon?.split("/")?.pop()?.replace(".png", "") && (
+                                                                    <Image
+                                                                        src={`https://api.hakush.in/hsr/UI/monstermiddleicon/${listMonster.find((monster2) => monster2.child.includes(Number(monster.id)))?.icon?.split("/")?.pop()?.replace(".png", "")}.webp`}
+                                                                        alt="Enemy Icon"
+                                                                        width={376}
+                                                                        height={512}
+                                                                        className="w-full h-full object-cover"
+                                                                    />
+                                                                )}
                                                             </div>
                                                             <span className="">{getLocaleName(locale, monster)} {`(${monster.id})`}</span>
                                                         </div>

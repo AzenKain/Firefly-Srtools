@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 
 import { AffixDetail, ASDetail, CharacterDetail, ConfigMaze, FreeSRJson, LightConeDetail, MocDetail, PFDetail, PSResponse, RelicDetail } from "@/types";
 import axios from 'axios';
@@ -26,6 +27,7 @@ export async function getConfigMazeApi(): Promise<ConfigMaze> {
             MOC: {},
             AS: {},
             PF: {},
+            Stage: {},
         };
     }
 }

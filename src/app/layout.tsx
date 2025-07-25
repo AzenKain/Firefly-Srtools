@@ -24,7 +24,13 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Firefly SrTools",
   description: "SrTools by Kain",
+  icons: {
+    icon: "/ff-srtool.png",
+    shortcut: "/ff-srtool.ico",
+    apple: "/ff-srtool.png",
+  },
 };
+
 
 export default async function RootLayout({
   children,
