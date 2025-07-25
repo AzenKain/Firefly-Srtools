@@ -8,7 +8,7 @@ interface AffixState {
     setMapSubAffix: (newSubAffix: Record<string, Record<string, AffixDetail>>) => void;
 }
 
-const useAffixStore = create<AffixState>((set, get) => ({
+const useAffixStore = create<AffixState>((set) => ({
     mapMainAffix: {},
     mapSubAffix: {},
     setMapMainAffix: (newMainAffix: Record<string, Record<string, AffixDetail>>) => set({ mapMainAffix: newMainAffix }),

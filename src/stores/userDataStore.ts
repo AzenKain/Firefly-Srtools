@@ -1,6 +1,6 @@
 import { ASConfigStore, AvatarStore, CEConfigStore, MOCConfigStore, PFConfigStore } from '@/types';
 import { create } from 'zustand'
-import { persist } from 'zustand/middleware';
+import { createJSONStorage, persist } from 'zustand/middleware';
 
 
 interface UserDataState {
@@ -71,6 +71,7 @@ const useUserDataStore = create<UserDataState>()(
         }),
         {
             name: 'user-data-storage',
+            storage: createJSONStorage(() => localStorage),
         }
     )
 );

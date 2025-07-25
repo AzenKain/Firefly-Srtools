@@ -1,6 +1,7 @@
-import { AvatarEnkaDetail, AvatarProfileStore, AvatarStore, CharacterDetail, EnkaResponse, FreeSRJson, RelicStore } from "@/types";
+import { AvatarEnkaDetail, AvatarProfileStore, AvatarStore, CharacterDetail, FreeSRJson, RelicStore } from "@/types";
 
-function safeNumber(val: any, fallback = 0): number {
+function safeNumber(val: string | number | null, fallback = 0): number {
+    if (!val) return fallback;
     const num = Number(val);
     return Number.isFinite(num) && num !== 0 ? num : fallback;
 }
@@ -14,7 +15,7 @@ export function converterToAvatarStore(data: Record<string, CharacterDetail>): {
                 avatar_id: Number(key),
                 data: {
                     rank: 0,
-                    skills: Object.entries(value.SkillTrees).reduce((acc, [pointName, dataPointEntry]) => {
+                    skills: Object.values(value.SkillTrees).reduce((acc, dataPointEntry) => {
                         const firstEntry = Object.values(dataPointEntry)[0];
                         if (firstEntry) {
                             acc[firstEntry.PointID] = firstEntry.MaxLevel;

@@ -7,13 +7,14 @@ import useAvatarStore from "@/stores/avatarStore"
 import { useTranslations } from "next-intl"
 import { useFetchASData, useFetchAvatarData, useFetchConfigData, useFetchLightconeData, useFetchMOCData, useFetchMonsterData, useFetchPFData, useFetchRelicData } from "@/hooks"
 
+
 export default function AvatarBar() {
     const [listElement, setListElement] = useState<Record<string, boolean>>({ "fire": false, "ice": false, "imaginary": false, "physical": false, "quantum": false, "thunder": false, "wind": false })
     const [listPath, setListPath] = useState<Record<string, boolean>>({ "knight": false, "mage": false, "priest": false, "rogue": false, "shaman": false, "warlock": false, "warrior": false, "memory": false })
     const { listAvatar, setAvatarSelected, setFilter, filter } = useAvatarStore()
     const transI18n = useTranslations("DataPage")
     const { locale } = useLocaleStore()
-
+    
     useFetchConfigData()
     useFetchAvatarData()
     useFetchLightconeData()
@@ -27,6 +28,7 @@ export default function AvatarBar() {
         setFilter({ ...filter, locale: locale, element: Object.keys(listElement).filter((key) => listElement[key]), path: Object.keys(listPath).filter((key) => listPath[key]) })
     // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [locale, listElement, listPath])
+
 
     return (
         <div className="grid grid-flow-row h-full auto-rows-max w-full">

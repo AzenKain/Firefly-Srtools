@@ -1,7 +1,7 @@
 export function randomPartition(sum: number, parts: number): number[] {
-    let raw = Array.from({ length: parts }, () => Math.random());
-    let total = raw.reduce((a, b) => a + b, 0);
-    let result = raw.map(r => Math.floor((r / total) * (sum - parts)) + 1);
+    const raw = Array.from({ length: parts }, () => Math.random());
+    const total = raw.reduce((a, b) => a + b, 0);
+    const result = raw.map(r => Math.floor((r / total) * (sum - parts)) + 1);
     let diff = sum - result.reduce((a, b) => a + b, 0);
     while (diff !== 0) {
         for (let i = 0; i < result.length && diff !== 0; i++) {

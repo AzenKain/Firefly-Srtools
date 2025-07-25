@@ -5,7 +5,7 @@ interface GlobalState {
     setIsConnectPS: (newIsConnectPS: boolean) => void;
 }
 
-const useGlobalStore = create<GlobalState>((set, get) => ({
+const useGlobalStore = create<GlobalState>((set) => ({
     isConnectPS: false,
     setIsConnectPS: (newIsConnectPS: boolean) => set({ isConnectPS: newIsConnectPS }),
 }));

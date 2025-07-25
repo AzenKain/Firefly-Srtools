@@ -8,7 +8,7 @@ interface FreeSRState {
     setFreeSRData: (newFreeSRData: FreeSRJson | null) => void;
 }
 
-const useFreeSRStore = create<FreeSRState>((set, get) => ({
+const useFreeSRStore = create<FreeSRState>((set) => ({
     selectedCharacters: [],
     freeSRData: null,
     setSelectedCharacters: (newListAvatar: CharacterInfoCardType[]) => set({ selectedCharacters: newListAvatar }),

@@ -1,4 +1,4 @@
-import { AffixDetail, ASConfigMaze, AvatarConfigMaze, ConfigMaze, MOCConfigMaze, PFConfigMaze, StageConfigMaze } from '@/types';
+import { ASConfigMaze, AvatarConfigMaze, ConfigMaze, MOCConfigMaze, PFConfigMaze, StageConfigMaze } from '@/types';
 import { create } from 'zustand'
 
 interface MazeState {

@@ -1,7 +1,6 @@
 export *  from "./getName"
 export * from "./replaceByParam"
 export * from "./converterToAvatarStore"
-export * from "./getAvatarNotExist"
 export * from "./calcData"
 export * from "./random"
 export * from "./json"

@@ -1,4 +1,4 @@
-import { AvatarDataStore, AvatarProfileCardType, CharacterBasic, CharacterInfoCardType, EnkaResponse, FilterAvatarType } from '@/types';
+import { AvatarProfileCardType, CharacterBasic, FilterAvatarType } from '@/types';
 import { create } from 'zustand'
 
 interface CopyProfileState {
